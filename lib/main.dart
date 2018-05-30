@@ -5,13 +5,10 @@ import 'themes.dart';
 
 void main() => runApp(new MyApp());
 
-class MyApp extends StatelessWidget
-{
+class MyApp extends StatelessWidget {
   @override
-  Widget build(BuildContext context)
-  {
-    return new MaterialApp
-      (
+  Widget build(BuildContext context) {
+    return new MaterialApp(
       title: 'Tinder cards demo',
       theme: _defaultTheme,
       home: new MainPage(),
