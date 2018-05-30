@@ -17,10 +17,8 @@ class _MainPageState extends State<MainPage> {
           backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
           title: Text('Games',
-              style: TextStyle(
-                  color: Colors.black,
-                  fontWeight: FontWeight.w700,
-                  fontSize: 30.0)),
+              style: Theme.of(context).textTheme.title,
+          )
         ),
         backgroundColor: Colors.white,
       ),
