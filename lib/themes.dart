@@ -21,6 +21,11 @@ TextTheme _buildDefaultTextTheme(TextTheme base) {
       fontWeight: FontWeight.w700,
       fontSize: 30.0,
     ),
+    subhead: base.subhead.copyWith(
+      color: Colors.black,
+      fontWeight: FontWeight.w700,
+      fontSize: 20.0,
+    ),
     caption: base.caption.copyWith(
       fontWeight: FontWeight.w400,
       fontSize: 14.0,

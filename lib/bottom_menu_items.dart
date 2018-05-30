@@ -15,7 +15,7 @@ String menuItemName(BottomMenu layoutType) {
     case BottomMenu.browse:
       return 'Browse';
     case BottomMenu.my:
-      return 'My Stuff';
+      return 'My Collection';
     case BottomMenu.more:
       return 'More';
     default:

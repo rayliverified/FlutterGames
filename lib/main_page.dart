@@ -3,6 +3,8 @@ import 'package:flutter/cupertino.dart';
 
 import 'bottom_menu_items.dart';
 import 'icons.dart';
+import 'games_page.dart';
+import 'movies_page.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -23,7 +25,7 @@ class _MainPageState extends State<MainPage> {
           backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
           title: Text(
-            'Games',
+            menuItemName(_layoutSelection),
             style: Theme.of(context).textTheme.title,
           ),
           actions: <Widget>[
@@ -68,9 +70,26 @@ class _MainPageState extends State<MainPage> {
           ],
           onTap: _onSelectMenuItem,
         ),
+        body: _buildPage(),
         backgroundColor: Colors.white,
       ),
     );
+  }
+
+  Widget _buildPage() {
+    switch (_layoutSelection) {
+      case BottomMenu.games:
+        return GamesPage();
+      case BottomMenu.movies:
+        return MoviesPage();
+      case BottomMenu.browse:
+        return GamesPage();
+      case BottomMenu.my:
+        return MoviesPage();
+      case BottomMenu.more:
+        return GamesPage();
+    }
+    return null;
   }
 
   BottomNavigationBarItem _buildMenuItem(
