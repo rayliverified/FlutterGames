@@ -3,8 +3,8 @@ import 'package:flutter/cupertino.dart';
 
 import 'bottom_menu_items.dart';
 import 'icons.dart';
-import 'games_page.dart';
-import 'movies_page.dart';
+import 'page_games.dart';
+import 'page_movies.dart';
 
 class MainPage extends StatefulWidget {
   @override

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'main_page.dart';
+import 'page_main.dart';
 import 'themes.dart';
 
 void main() => runApp(new FlutterGames());
