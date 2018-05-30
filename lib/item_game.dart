@@ -11,18 +11,21 @@ class GameItem extends StatelessWidget {
 
     return new Padding(
       padding: const EdgeInsets.only(right: 12.0),
-      child: new Material(
-        elevation: 8.0,
-        shadowColor: new Color(0xCC000000),
-        child: new ClipRRect(
-          borderRadius: new BorderRadius.circular(4.0),
-          child: new Image(
-            image: new NetworkImage(photo),
-            width: 120.0,
-            height: 180.0,
-            fit: BoxFit.cover,
+      child: new Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [new Material(
+          elevation: 8.0,
+          shadowColor: new Color(0xCC000000),
+          child: new ClipRRect(
+            borderRadius: new BorderRadius.circular(4.0),
+            child: new Image(
+              image: new NetworkImage(photo),
+              width: 120.0,
+              height: 180.0,
+              fit: BoxFit.cover,
+            ),
           ),
-        ),
+        ),],
       ),
     );
   }
