@@ -1,4 +1,4 @@
-# stream_games
+# Flutter Games
 
 Flutter app for purchasing and renting games.
 
