@@ -1,12 +1,11 @@
-import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:http/http.dart' as http;
 
 import 'item_game.dart';
+import 'model/game.dart';
 
 class HorizontalGameController extends StatelessWidget {
   HorizontalGameController(this.gameItems);
-  final List<String> gameItems;
+  final List<Game> gameItems;
 
   @override
   Widget build(BuildContext context) {

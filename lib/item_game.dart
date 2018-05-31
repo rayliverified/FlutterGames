@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
+import 'model/game.dart';
+
 class GameItem extends StatelessWidget {
-  GameItem(this.buildContext, this.photo);
+  GameItem(this.buildContext, this.game);
   final BuildContext buildContext;
-  final String photo;
+  final Game game;
 
   @override
   Widget build(BuildContext context) {
@@ -18,7 +20,7 @@ class GameItem extends StatelessWidget {
             child: new ClipRRect(
               borderRadius: new BorderRadius.circular(4.0),
               child: new Image(
-                image: new NetworkImage(photo),
+                image: new NetworkImage(game.cover),
                 width: 120.0,
                 height: 180.0,
                 fit: BoxFit.cover,
@@ -31,11 +33,11 @@ class GameItem extends StatelessWidget {
               child: new Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  new Text("PVZ 2: Garden Warfare An epic adventure!",
+                  new Text(game.name,
                       style: Theme.of(context).textTheme.display1,
                       maxLines: 1,
                       overflow: TextOverflow.ellipsis),
-                  new Text("XBOX ONE | PS4",
+                  new Text(game.getPlatforms(),
                       style: Theme.of(context).textTheme.caption,
                       maxLines: 1,
                       overflow: TextOverflow.fade),

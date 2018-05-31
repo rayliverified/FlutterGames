@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'horizontal_game_scroller.dart';
+import 'model/repository.dart';
 
 class GamesPage extends StatefulWidget {
   GamesPage({Key key}) : super(key: key);
@@ -23,12 +24,7 @@ class _GamesPageState extends State<GamesPage> {
               style: Theme.of(context).textTheme.subhead,
             ),
           ),
-          new HorizontalGameController([
-            "http://images.redbox.com/Images/EPC/boxartvertical/201831.jpg",
-            "http://images.redbox.com/Images/EPC/boxartvertical/203165.jpg",
-            "http://images.redbox.com/Images/EPC/boxartvertical/204626.jpg",
-            "http://images.redbox.com/Images/EPC/boxartvertical/200862.jpg"
-          ]),
+          new HorizontalGameController(newGamesList),
           new Divider(height: 2.0, indent: 8.0),
           new Padding(
             padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
@@ -37,12 +33,7 @@ class _GamesPageState extends State<GamesPage> {
               style: Theme.of(context).textTheme.subhead,
             ),
           ),
-          new HorizontalGameController([
-            "http://images.redbox.com/Images/EPC/boxartvertical/201831.jpg",
-            "http://images.redbox.com/Images/EPC/boxartvertical/203165.jpg",
-            "http://images.redbox.com/Images/EPC/boxartvertical/204626.jpg",
-            "http://images.redbox.com/Images/EPC/boxartvertical/200862.jpg"
-          ]),
+          new HorizontalGameController(popularGamesList),
         ],
       ),
     );
