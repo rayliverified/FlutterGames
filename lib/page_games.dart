@@ -18,19 +18,49 @@ class _GamesPageState extends State<GamesPage> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           new Padding(
-            padding: const EdgeInsets.fromLTRB(16.0, 6.0, 16.0, 8.0),
-            child: new Text(
-              "New Releases",
-              style: Theme.of(context).textTheme.subhead,
+            padding: const EdgeInsets.fromLTRB(16.0, 6.0, 8.0, 8.0),
+            child: new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  new Text(
+                    "New Releases",
+                    style: Theme.of(context).textTheme.subhead,
+                  ),
+                  new InkWell(
+                    onTap: () => {},
+                    child: new Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                      child: new Text(
+                        "Browse All",
+                        style: Theme.of(context).textTheme.display2,
+                      ),
+                    ),
+                  ),
+                ]
             ),
           ),
           new HorizontalGameController(newGamesList),
           new Divider(height: 2.0, indent: 8.0),
           new Padding(
-            padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
-            child: new Text(
-              "Most Popular",
-              style: Theme.of(context).textTheme.subhead,
+            padding: const EdgeInsets.fromLTRB(16.0, 12.0, 8.0, 8.0),
+            child: new Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  new Text(
+                    "Most Popular",
+                    style: Theme.of(context).textTheme.subhead,
+                  ),
+                  new InkWell(
+                    onTap: () => {},
+                    child: new Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                      child: new Text(
+                        "Browse All",
+                        style: Theme.of(context).textTheme.display2,
+                      ),
+                    ),
+                  ),
+                ]
             ),
           ),
           new HorizontalGameController(popularGamesList),

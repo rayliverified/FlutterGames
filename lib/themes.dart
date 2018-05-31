@@ -31,6 +31,9 @@ TextTheme _buildDefaultTextTheme(TextTheme base) {
       fontWeight: FontWeight.w500,
       fontSize: 16.0,
     ),
+    display2: base.display2.copyWith(
+      fontSize: 14.0,
+    ),
     caption: base.caption.copyWith(
       fontWeight: FontWeight.w400,
       fontSize: 14.0,
