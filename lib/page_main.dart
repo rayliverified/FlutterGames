@@ -5,6 +5,7 @@ import 'bottom_menu_items.dart';
 import 'icons.dart';
 import 'page_games.dart';
 import 'page_movies.dart';
+import 'page_coming_soon.dart';
 
 class MainPage extends StatefulWidget {
   @override
@@ -99,13 +100,13 @@ class _MainPageState extends State<MainPage> {
       case BottomMenu.games:
         return GamesPage();
       case BottomMenu.movies:
-        return MoviesPage();
+        return ComingSoonPage(menuIcon(_layoutSelection));
       case BottomMenu.browse:
-        return GamesPage();
+        return ComingSoonPage(menuIcon(_layoutSelection));
       case BottomMenu.my:
-        return MoviesPage();
+        return ComingSoonPage(menuIcon(_layoutSelection));
       case BottomMenu.more:
-        return GamesPage();
+        return ComingSoonPage(menuIcon(_layoutSelection));
     }
     return null;
   }
