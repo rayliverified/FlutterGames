@@ -24,9 +24,16 @@ class _MainPageState extends State<MainPage> {
           centerTitle: false,
           backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
-          title: Text(
-            menuItemName(_layoutSelection),
-            style: Theme.of(context).textTheme.title,
+          title: new Row(
+            children: [
+              Text(
+                menuItemName(_layoutSelection),
+                style: Theme.of(context).textTheme.title,
+              ),
+              new Padding(padding: new EdgeInsets.only(right: 8.0)),
+              new Icon(menuIcon(_layoutSelection),
+                  size: 28.0, color: Colors.black),
+            ],
           ),
           actions: <Widget>[
             new Center(
@@ -56,16 +63,27 @@ class _MainPageState extends State<MainPage> {
         ),
         bottomNavigationBar: new CupertinoTabBar(
           activeColor: Colors.blueAccent,
+          backgroundColor: Colors.white70,
           items: <BottomNavigationBarItem>[
             _buildMenuItem(
-                icon: controllerOutlineIcon, bottomMenu: BottomMenu.games),
+                icon: controllerOutlineIcon,
+                iconSelected: controllerIcon,
+                bottomMenu: BottomMenu.games),
             _buildMenuItem(
-                icon: movieOutlineIcon, bottomMenu: BottomMenu.movies),
-            _buildMenuItem(icon: browseOutlineIcon, bottomMenu: BottomMenu.browse),
+                icon: movieOutlineIcon,
+                iconSelected: movieIcon,
+                bottomMenu: BottomMenu.movies),
             _buildMenuItem(
-                icon: profileOutlineIcon, bottomMenu: BottomMenu.my),
+                icon: browseOutlineIcon,
+                iconSelected: browseIcon,
+                bottomMenu: BottomMenu.browse),
+            _buildMenuItem(
+                icon: profileOutlineIcon,
+                iconSelected: profileIcon,
+                bottomMenu: BottomMenu.my),
             _buildMenuItem(
                 icon: moreOutlineIcon,
+                iconSelected: moreIcon,
                 bottomMenu: BottomMenu.more),
           ],
           onTap: _onSelectMenuItem,
@@ -93,11 +111,13 @@ class _MainPageState extends State<MainPage> {
   }
 
   BottomNavigationBarItem _buildMenuItem(
-      {IconData icon, BottomMenu bottomMenu}) {
+      {IconData icon, IconData iconSelected, BottomMenu bottomMenu}) {
     String text = menuItemName(bottomMenu);
+    IconData setIcon = _setIconSelected(
+        bottomMenu: bottomMenu, icon: icon, iconSelected: iconSelected);
     return BottomNavigationBarItem(
       icon: Icon(
-        icon,
+        setIcon,
         color: _setMenuItemColor(bottomMenu: bottomMenu),
       ),
       title: Text(
@@ -107,6 +127,11 @@ class _MainPageState extends State<MainPage> {
         ),
       ),
     );
+  }
+
+  IconData _setIconSelected(
+      {BottomMenu bottomMenu, IconData icon, IconData iconSelected}) {
+    return _layoutSelection == bottomMenu ? iconSelected: icon;
   }
 
   Color _setMenuItemColor({BottomMenu bottomMenu}) {

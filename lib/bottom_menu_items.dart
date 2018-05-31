@@ -1,3 +1,6 @@
+import 'package:flutter/material.dart';
+import 'icons.dart';
+
 enum BottomMenu {
   games,
   movies,
@@ -15,10 +18,27 @@ String menuItemName(BottomMenu layoutType) {
     case BottomMenu.browse:
       return 'Browse';
     case BottomMenu.my:
-      return 'My Collection';
+      return 'My Stuff';
     case BottomMenu.more:
       return 'More';
     default:
       return '';
+  }
+}
+
+IconData menuIcon(BottomMenu layoutType) {
+  switch (layoutType) {
+    case BottomMenu.games:
+      return controllerIcon;
+    case BottomMenu.movies:
+      return movieIcon;
+    case BottomMenu.browse:
+      return browseIcon;
+    case BottomMenu.my:
+      return profileIcon;
+    case BottomMenu.more:
+      return moreIcon;
+    default:
+      return null;
   }
 }

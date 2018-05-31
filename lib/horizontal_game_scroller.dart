@@ -5,13 +5,11 @@ import 'package:http/http.dart' as http;
 import 'item_game.dart';
 
 class HorizontalGameController extends StatelessWidget {
-
   HorizontalGameController(this.gameItems);
   final List<String> gameItems;
 
   @override
   Widget build(BuildContext context) {
-
     return new SizedBox.fromSize(
       size: const Size.fromHeight(240.0),
       child: new ListView.builder(
@@ -20,8 +18,7 @@ class HorizontalGameController extends StatelessWidget {
           padding: const EdgeInsets.only(left: 12.0, top: 4.0),
           itemBuilder: (BuildContext context, int position) {
             return GameItem(context, gameItems[position]);
-          }
-      ),
+          }),
     );
   }
 }
