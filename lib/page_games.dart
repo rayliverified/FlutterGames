@@ -17,23 +17,23 @@ class _GamesPageState extends State<GamesPage> {
       child: new Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          new Divider(height: 2.0, indent: 12.0),
           new Padding(
-            padding: const EdgeInsets.fromLTRB(16.0, 18.0, 16.0, 12.0),
+            padding: const EdgeInsets.fromLTRB(16.0, 6.0, 16.0, 8.0),
             child: new Text(
               "New Releases",
               style: Theme.of(context).textTheme.subhead,
             ),
           ),
-          new HorizontalGameController(["http://images.redbox.com/Images/EPC/boxartvertical/201831.jpg", "http://images.redbox.com/Images/EPC/boxartvertical/203165.jpg", "http://images.redbox.com/Images/EPC/boxartvertical/204626.jpg"]),
+          new HorizontalGameController(["http://images.redbox.com/Images/EPC/boxartvertical/201831.jpg", "http://images.redbox.com/Images/EPC/boxartvertical/203165.jpg", "http://images.redbox.com/Images/EPC/boxartvertical/204626.jpg", "http://images.redbox.com/Images/EPC/boxartvertical/200862.jpg"]),
+          new Divider(height: 2.0, indent: 8.0),
           new Padding(
-            padding: const EdgeInsets.fromLTRB(16.0, 18.0, 16.0, 12.0),
+            padding: const EdgeInsets.fromLTRB(16.0, 12.0, 16.0, 8.0),
             child: new Text(
               "Most Popular",
               style: Theme.of(context).textTheme.subhead,
             ),
           ),
-          new HorizontalGameController(["http://images.redbox.com/Images/EPC/boxartvertical/201831.jpg", "http://images.redbox.com/Images/EPC/boxartvertical/203165.jpg", "http://images.redbox.com/Images/EPC/boxartvertical/204626.jpg"]),
+          new HorizontalGameController(["http://images.redbox.com/Images/EPC/boxartvertical/201831.jpg", "http://images.redbox.com/Images/EPC/boxartvertical/203165.jpg", "http://images.redbox.com/Images/EPC/boxartvertical/204626.jpg", "http://images.redbox.com/Images/EPC/boxartvertical/200862.jpg"]),
         ],
       ),
     );
