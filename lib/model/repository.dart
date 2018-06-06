@@ -70,27 +70,18 @@ final Game detroitbh = new Game(
   box:
       'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/box/detroitbh.jpg',
   cover:
-      'https://cdn.gamerant.com/wp-content/uploads/detroit-become-human-release-date-2018-header.jpg.optimal.jpg',
+      'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/cover/detroitbh.jpg',
   description:
       'Travel to the near-future metropolis of Detroit – a city rejuvenated by an exciting technological development: androids. Witness your brave new world turn to chaos as you take on the role of Kara, a female android trying to find her own place in a turbulent social landscape.',
   platforms: [
     'PS4',
   ],
-  rating: 4.5,
+  rating: 4.0,
   screenshots: [
-    'https://images.igdb.com/igdb/image/upload/t_original/plcseyqlfvsot1ezxym5.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/iux3644a2bewicybhcjo.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/amlt3ob9o48fubgfrt9i.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/wzgo0jtaajeq14vl4l0q.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/dwkgylckse3aewbv3lpr.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/v1loppxzf43qvp7wt8gz.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/k59thzeaqb9ul1pryxbq.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/tefcnnribjp79ncp3ag2.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/fx3ckwdhebpjvxlhq4bx.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/e032aajjtvoakohuuac5.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/sn6g2xe3dd1ip6cuotci.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/v33h6a2od5folrdrsljm.jpg',
-    'https://images.igdb.com/igdb/image/upload/t_original/flij8fnx5drfqcrhjcv7.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_1.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_2.png',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_3.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_4.jpg',
   ]
 );
 
