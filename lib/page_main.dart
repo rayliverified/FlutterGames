@@ -4,7 +4,6 @@ import 'package:flutter/cupertino.dart';
 import 'bottom_menu_items.dart';
 import 'icons.dart';
 import 'page_games.dart';
-import 'page_movies.dart';
 import 'page_coming_soon.dart';
 
 class MainPage extends StatefulWidget {
@@ -132,7 +131,7 @@ class _MainPageState extends State<MainPage> {
 
   IconData _setIconSelected(
       {BottomMenu bottomMenu, IconData icon, IconData iconSelected}) {
-    return _layoutSelection == bottomMenu ? iconSelected: icon;
+    return _layoutSelection == bottomMenu ? iconSelected : icon;
   }
 
   Color _setMenuItemColor({BottomMenu bottomMenu}) {

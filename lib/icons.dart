@@ -23,3 +23,7 @@ const moreIcon = const IconData(0xf46a,
     fontFamily: cupertinoFamily, fontPackage: cupertinoPackage);
 const moreOutlineIcon = const IconData(0xf469,
     fontFamily: cupertinoFamily, fontPackage: cupertinoPackage);
+const plusIcon = const IconData(0xf489,
+    fontFamily: cupertinoFamily, fontPackage: cupertinoPackage);
+const playOutlineIcon = const IconData(0xf487,
+    fontFamily: cupertinoFamily, fontPackage: cupertinoPackage);

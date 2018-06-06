@@ -29,15 +29,15 @@ class _GamesPageState extends State<GamesPage> {
                   new InkWell(
                     onTap: () => {},
                     child: new Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8.0, vertical: 4.0),
                       child: new Text(
                         "Browse All",
                         style: Theme.of(context).textTheme.display2,
                       ),
                     ),
                   ),
-                ]
-            ),
+                ]),
           ),
           new HorizontalGameController(newGamesList),
           new Divider(height: 2.0, indent: 8.0),
@@ -53,15 +53,15 @@ class _GamesPageState extends State<GamesPage> {
                   new InkWell(
                     onTap: () => {},
                     child: new Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 8.0, vertical: 4.0),
+                      padding: const EdgeInsets.symmetric(
+                          horizontal: 8.0, vertical: 4.0),
                       child: new Text(
                         "Browse All",
                         style: Theme.of(context).textTheme.display2,
                       ),
                     ),
                   ),
-                ]
-            ),
+                ]),
           ),
           new HorizontalGameController(popularGamesList),
         ],

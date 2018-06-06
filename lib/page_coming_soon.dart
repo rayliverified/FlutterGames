@@ -17,18 +17,20 @@ class _ComingSoonPageState extends State<ComingSoonPage> {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
-          new Icon(widget.icon,
-              color: Colors.black26, size: 96.0),
+          new Icon(widget.icon, color: Colors.black26, size: 96.0),
           new Padding(padding: new EdgeInsets.only(bottom: 36.0)),
-          new Text('Coming soon!',
-              style: Theme.of(context).textTheme.subhead),
+          new Text('Coming soon!', style: Theme.of(context).textTheme.subhead),
           new Padding(padding: new EdgeInsets.only(bottom: 8.0)),
           new Container(
             margin: new EdgeInsets.symmetric(horizontal: 64.0),
             child: new Text(
                 "We're working hard on new features. Check back often!",
                 textAlign: TextAlign.center,
-                style: Theme.of(context).textTheme.display1.apply(color: Colors.black54)),
+                style: Theme
+                    .of(context)
+                    .textTheme
+                    .display1
+                    .apply(color: Colors.black54)),
           ),
         ],
       ),
