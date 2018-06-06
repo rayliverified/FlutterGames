@@ -5,6 +5,7 @@ import 'icons.dart';
 import 'model/game.dart';
 import 'item_game.dart';
 import 'item_header_game.dart';
+import 'item_summary.dart';
 
 class GameDetailsPage extends StatefulWidget {
   GameDetailsPage(this.game, {Key key}) : super(key: key);
@@ -95,6 +96,8 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                 ),
               ),
             ),
+            new Padding(padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
+                child: new SummaryText(widget.game.description))
           ],
         ),
       ),

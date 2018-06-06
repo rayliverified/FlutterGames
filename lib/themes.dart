@@ -38,6 +38,9 @@ TextTheme _buildDefaultTextTheme(TextTheme base) {
       fontWeight: FontWeight.w400,
       fontSize: 14.0,
     ),
+    body1: base.body1.copyWith(
+      fontSize: 16.0,
+    ),
     body2: base.body2.copyWith(
       fontWeight: FontWeight.w500,
       fontSize: 16.0,
