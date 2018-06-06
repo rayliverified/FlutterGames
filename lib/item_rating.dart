@@ -42,7 +42,7 @@ class RatingInformation extends StatelessWidget {
         new Padding(
           padding: const EdgeInsets.only(top: 4.0),
           child: new Text(
-            'Ratings',
+            'Rating',
             style: ratingCaptionStyle,
           ),
         ),
@@ -54,18 +54,18 @@ class RatingInformation extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
         _buildRatingBar(theme),
-        new Padding(
-          padding: const EdgeInsets.only(top: 4.0, left: 4.0),
-          child: new Text(
-            'Grade now',
-            style: ratingCaptionStyle,
-          ),
-        ),
+//        new Padding(
+//          padding: const EdgeInsets.only(top: 4.0, left: 4.0),
+//          child: new Text(
+//            'Tap to Rate',
+//            style: ratingCaptionStyle,
+//          ),
+//        ),
       ],
     );
 
     return new Row(
-      crossAxisAlignment: CrossAxisAlignment.end,
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         numericRating,
         new Padding(
