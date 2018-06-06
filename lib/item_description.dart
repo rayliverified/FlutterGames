@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class SummaryText extends StatelessWidget {
-  SummaryText(this.text);
+class DescriptionText extends StatelessWidget {
+  DescriptionText(this.text);
 
   final String text;
 

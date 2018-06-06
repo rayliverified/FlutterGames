@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
-import 'icons.dart';
 import 'model/game.dart';
-import 'item_game.dart';
+import 'item_game_box.dart';
 import 'item_header_game.dart';
-import 'item_summary.dart';
+import 'item_description.dart';
+import 'scroll_horizontal_screenshots.dart';
 
 class GameDetailsPage extends StatefulWidget {
   GameDetailsPage(this.game, {Key key}) : super(key: key);
@@ -97,42 +97,12 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
               ),
             ),
             new Padding(padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
-                child: new SummaryText(widget.game.description))
+                child: new DescriptionText(widget.game.description)),
+            new Padding(padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
+                child: new HorizontalScreenshotController(widget.game.screenshots)),
           ],
         ),
       ),
-    );
-  }
-
-  Widget _buildGameDetailsPage() {
-    return new Stack(
-      children: [
-        new Positioned(
-          bottom: 0.0,
-          left: 16.0,
-          right: 16.0,
-          child: new Row(
-            crossAxisAlignment: CrossAxisAlignment.end,
-            mainAxisAlignment: MainAxisAlignment.end,
-            children: [
-              new GameItem(context, widget.game, width: 180.0),
-              new Expanded(
-                child: new Padding(
-                  padding: const EdgeInsets.only(left: 16.0),
-                  child: new Column(
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      new Text(
-                        widget.game.name,
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ],
-          ),
-        ),
-      ],
     );
   }
 }

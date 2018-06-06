@@ -77,6 +77,21 @@ final Game detroitbh = new Game(
     'PS4',
   ],
   rating: 4.5,
+  screenshots: [
+    'https://images.igdb.com/igdb/image/upload/t_original/plcseyqlfvsot1ezxym5.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/iux3644a2bewicybhcjo.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/amlt3ob9o48fubgfrt9i.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/wzgo0jtaajeq14vl4l0q.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/dwkgylckse3aewbv3lpr.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/v1loppxzf43qvp7wt8gz.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/k59thzeaqb9ul1pryxbq.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/tefcnnribjp79ncp3ag2.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/fx3ckwdhebpjvxlhq4bx.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/e032aajjtvoakohuuac5.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/sn6g2xe3dd1ip6cuotci.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/v33h6a2od5folrdrsljm.jpg',
+    'https://images.igdb.com/igdb/image/upload/t_original/flij8fnx5drfqcrhjcv7.jpg',
+  ]
 );
 
 final Game shadowcolossus = new Game(

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'horizontal_game_scroller.dart';
+import 'scroll_horizontal_game.dart';
 import 'model/repository.dart';
 
 class GamesPage extends StatefulWidget {

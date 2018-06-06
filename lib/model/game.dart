@@ -8,6 +8,7 @@ class Game {
     this.description,
     this.platforms,
     this.rating,
+    this.screenshots,
   });
 
   final String name;
@@ -16,6 +17,7 @@ class Game {
   final String description;
   final List<String> platforms;
   final double rating;
+  final List<String> screenshots;
 
   String getPlatforms() {
     String platformText = "";

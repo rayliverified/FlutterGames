@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'icons.dart';
 import 'model/game.dart';
-import 'item_game.dart';
+import 'item_game_box.dart';
 import 'item_header_diagonal.dart';
 import 'item_rating.dart';
 
@@ -32,7 +32,7 @@ class GameDetailHeader extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              new GameItem(
+              new GameBoxItem(
                 context,
                 game,
                 width: 150.0,

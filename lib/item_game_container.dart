@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'model/game.dart';
-import "item_game.dart";
+import "item_game_box.dart";
 import "page_game_details.dart";
 
 class GameContainerItem extends StatelessWidget {
@@ -18,7 +18,7 @@ class GameContainerItem extends StatelessWidget {
         child: new Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            new GameItem(context, game, width: 120.0),
+            new GameBoxItem(context, game, width: 120.0),
             new Padding(padding: const EdgeInsets.only(top: 6.0)),
             new ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 120.0),
