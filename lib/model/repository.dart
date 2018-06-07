@@ -3,8 +3,7 @@ import 'game.dart';
 final List<Game> newGamesList = [
   seaofthieves,
   detroitbh,
-  godofwar,
-  monsterhunterw,
+  shadowcolossus,
   agentsofmayhem,
   mgsurvive
 ];
@@ -13,8 +12,7 @@ final List<Game> popularGamesList = [
   fallout4,
   fc5,
   pvzgw2,
-  riseoftr,
-  shadowcolossus
+  riseoftr
 ];
 
 final Game pvzgw2 = new Game(
@@ -30,6 +28,10 @@ final Game pvzgw2 = new Game(
   ],
   rating: 3.3,
   screenshots: [
+    '',
+    '',
+    '',
+    '',
   ],
 );
 
@@ -46,6 +48,10 @@ final Game codww2 = new Game(
   ],
   rating: 3.3,
   screenshots: [
+    '',
+    '',
+    '',
+    '',
   ],
 );
 
@@ -62,6 +68,10 @@ final Game fc5 = new Game(
   ],
   rating: 3.3,
   screenshots: [
+    '',
+    '',
+    '',
+    '',
   ],
 );
 
@@ -76,8 +86,12 @@ final Game riseoftr = new Game(
     'XBOX ONE',
     'PS4',
   ],
-  rating: 3.3,
+  rating: 4.3,
   screenshots: [
+    '',
+    '',
+    '',
+    '',
   ],
 );
 
@@ -111,8 +125,91 @@ final Game shadowcolossus = new Game(
   platforms: [
     'PS4',
   ],
+  rating: 4.5,
+  screenshots: [
+    '',
+    '',
+    '',
+    '',
+  ],
+);
+
+final Game agentsofmayhem = new Game(
+  name: 'Agents of Mayhem',
+  box:
+  'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/box/agentsofmayhem.jpg',
+  cover: '',
+  description:
+  'In Agents of Mayhem, a nefarious plot is set in motion to build a world-altering device that will grant unrivaled power to the supervillain organization known as LEGION. Pick your squad of 3 highly skilled and iconic characters from a roster of 12 uniquely designed MAYHEM agents and get ready to save the world!',
+  platforms: [
+    'XBOX ONE',
+    'PS4',
+  ],
+  rating: 3.6,
+  screenshots: [
+    '',
+    '',
+    '',
+    '',
+  ],
+);
+
+final Game fallout4 = new Game(
+  name: 'Fallout 4',
+  box:
+  'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/box/fallout4.jpg',
+  cover: 'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/cover/fallout4.jpg',
+  description:
+  'As the sole survivor of Vault 111, you enter a world destroyed by nuclear war. Every second is a fight for survival, and every choice is yours. Only you can rebuild and determine the fate of the Wasteland. Welcome home.',
+  platforms: [
+    'XBOX ONE',
+    'PS4',
+  ],
+  rating: 4.2,
+  screenshots: [
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/fallout_1.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/fallout_2.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/fallout_3.png',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/fallout_4.jpg',
+  ],
+);
+
+final Game mgsurvive = new Game(
+  name: 'Metal Gear Survive',
+  box:
+  'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/box/mgsurvive.jpg',
+  cover: 'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/cover/mgsurvive.jpg',
+  description:
+  'Create your own character and learn to survive. Scavenge resources, craft weapons, build a base camp and explore the unknown while developing the survival skills necessary in this hostile environment.',
+  platforms: [
+    'XBOX ONE',
+    'PS4',
+  ],
+  rating: 3.0,
+  screenshots: [
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_1.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_2.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_2.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_4.jpg',
+  ],
+);
+
+final Game seaofthieves = new Game(
+  name: 'Sea of Thieves',
+  box:
+  'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/box/seaoftheives.jpg',
+  cover: 'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/cover/seaofthieves.jpg',
+  description:
+  'Sea of Thieves offers the essential pirate experience, from sailing and fighting to exploring and looting—everything you need to live the pirate life and create all-new legends.',
+  platforms: [
+    'XBOX ONE',
+  ],
   rating: 3.3,
   screenshots: [
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/seaofthieves_1.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/seaofthieves_2.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/seaofthieves_3.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/seaofthieves_4.jpg',
   ],
 );
 
@@ -128,6 +225,10 @@ final Game godofwar = new Game(
   ],
   rating: 3.3,
   screenshots: [
+    '',
+    '',
+    '',
+    '',
   ],
 );
 
@@ -144,69 +245,10 @@ final Game monsterhunterw = new Game(
   ],
   rating: 3.3,
   screenshots: [
-  ],
-);
-
-final Game agentsofmayhem = new Game(
-  name: 'Agents of Mayhem',
-  box:
-  'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/box/agentsofmayhem.jpg',
-  cover: '',
-  description:
-  'In Agents of Mayhem, a nefarious plot is set in motion to build a world-altering device that will grant unrivaled power to the supervillain organization known as LEGION. Pick your squad of 3 highly skilled and iconic characters from a roster of 12 uniquely designed MAYHEM agents and get ready to save the world!',
-  platforms: [
-    'XBOX ONE',
-    'PS4',
-  ],
-  rating: 3.3,
-  screenshots: [
-  ],
-);
-
-final Game fallout4 = new Game(
-  name: 'Fallout 4',
-  box:
-  'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/box/fallout4.jpg',
-  cover: '',
-  description:
-  'As the sole survivor of Vault 111, you enter a world destroyed by nuclear war. Every second is a fight for survival, and every choice is yours. Only you can rebuild and determine the fate of the Wasteland. Welcome home.',
-  platforms: [
-    'XBOX ONE',
-    'PS4',
-  ],
-  rating: 4.2,
-  screenshots: [
-  ],
-);
-
-final Game mgsurvive = new Game(
-  name: 'Metal Gear Survive',
-  box:
-  'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/box/mgsurvive.jpg',
-  cover: '',
-  description:
-  'Create your own character and learn to survive. Scavenge resources, craft weapons, build a base camp and explore the unknown while developing the survival skills necessary in this hostile environment.',
-  platforms: [
-    'XBOX ONE',
-    'PS4',
-  ],
-  rating: 3.0,
-  screenshots: [
-  ],
-);
-
-final Game seaofthieves = new Game(
-  name: 'Sea of Thieves',
-  box:
-  'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/box/seaoftheives.jpg',
-  cover: '',
-  description:
-  'Sea of Thieves offers the essential pirate experience, from sailing and fighting to exploring and looting—everything you need to live the pirate life and create all-new legends.',
-  platforms: [
-    'XBOX ONE',
-  ],
-  rating: 3.3,
-  screenshots: [
+    '',
+    '',
+    '',
+    '',
   ],
 );
 //final Game  = new Game(
