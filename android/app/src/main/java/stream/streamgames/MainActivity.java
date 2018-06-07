@@ -1,4 +1,4 @@
-package stream.streamgames;
+package stream.games;
 
 import android.os.Bundle;
 

@@ -15,13 +15,13 @@ class DescriptionText extends StatelessWidget {
       children: [
         new Text(
           'Summary',
-          style: Theme.of(context).textTheme.display1.apply(fontSizeDelta: 2.0),
+          style: textTheme.display1.apply(fontSizeDelta: 2.0),
         ),
         new Padding(
           padding: const EdgeInsets.only(top: 8.0),
           child: new Text(
             text,
-            style: Theme.of(context).textTheme.body1,
+            style: textTheme.body1,
           ),
         ),
         // No expand-collapse in this tutorial, we just slap the "more"
@@ -32,7 +32,7 @@ class DescriptionText extends StatelessWidget {
           children: [
             new Text(
               'more',
-              style: Theme.of(context).textTheme.display2.copyWith(color: theme.accentColor),
+              style: textTheme.display2.copyWith(color: theme.accentColor),
             ),
             new Icon(
               Icons.keyboard_arrow_down,

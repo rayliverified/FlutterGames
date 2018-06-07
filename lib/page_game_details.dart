@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 
 import 'model/game.dart';
-import 'item_game_box.dart';
 import 'item_header_game.dart';
 import 'item_description.dart';
 import 'scroll_horizontal_screenshots.dart';
