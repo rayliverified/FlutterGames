@@ -135,8 +135,9 @@ class GameDetailHeader extends StatelessWidget {
     var screenWidth = MediaQuery.of(context).size.width;
 
     return new DiagonallyCutColoredImage(
-      new Image(
-        image: NetworkImage(game.cover),
+      new FadeInImage.assetNetwork(
+        image: game.cover,
+        placeholder: "assets/placeholder_cover.jpg",
         width: screenWidth,
         height: 260.0,
         fit: BoxFit.cover,
