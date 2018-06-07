@@ -28,7 +28,7 @@ final Game pvzgw2 = new Game(
   ],
   rating: 4.0,
   screenshots: [
-    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/pvzgw2_1.png',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/pvzgw2_1.jpg',
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/pvzgw2_2.jpg',
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/pvzgw2_3.jpg',
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/pvzgw2_4.jpg',
@@ -109,7 +109,7 @@ final Game detroitbh = new Game(
     rating: 4.0,
     screenshots: [
       'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_1.jpg',
-      'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_2.png',
+      'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_2.jpg',
       'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_3.jpg',
       'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_4.jpg',
     ]
@@ -119,7 +119,7 @@ final Game shadowcolossus = new Game(
   name: 'Shadow of the Colossus',
   box:
   'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/box/shadowcolossus.jpg',
-  cover: 'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/cover/shadowcolossus.png',
+  cover: 'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/cover/shadowcolossus.jpg',
   description:
   'Armed with only a sword and a bow, journey through ancient lands to seek out gigantic beasts.',
   platforms: [
@@ -127,9 +127,9 @@ final Game shadowcolossus = new Game(
   ],
   rating: 4.5,
   screenshots: [
-    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/shadowcolossus_1.png',
-    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/shadowcolossus_2.png',
-    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/shadowcolossus_3.png',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/shadowcolossus_1.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/shadowcolossus_2.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/shadowcolossus_3.jpg',
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/shadowcolossus_4.jpg',
   ],
 );
