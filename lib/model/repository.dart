@@ -26,7 +26,7 @@ final Game pvzgw2 = new Game(
     'XBOX ONE',
     'PS4',
   ],
-  rating: 3.3,
+  rating: 4.0,
   screenshots: [
     '',
     '',
@@ -46,7 +46,7 @@ final Game codww2 = new Game(
     'XBOX ONE',
     'PS4',
   ],
-  rating: 3.3,
+  rating: 3.6,
   screenshots: [
     '',
     '',
@@ -66,7 +66,7 @@ final Game fc5 = new Game(
     'XBOX ONE',
     'PS4',
   ],
-  rating: 3.3,
+  rating: 4.5,
   screenshots: [
     '',
     '',
