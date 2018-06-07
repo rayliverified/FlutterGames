@@ -169,7 +169,7 @@ final Game fallout4 = new Game(
   screenshots: [
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/fallout_1.jpg',
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/fallout_2.jpg',
-    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/fallout_3.png',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/fallout_3.jpg',
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/fallout_4.jpg',
   ],
 );

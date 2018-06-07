@@ -18,8 +18,9 @@ class GameBoxItem extends StatelessWidget {
       borderRadius: new BorderRadius.circular(4.0),
       elevation: 8.0,
       shadowColor: new Color(0xCC000000),
-      child: new Image(
-        image: new NetworkImage(game.box),
+      child: new FadeInImage.assetNetwork(
+        image: game.box,
+        placeholder: "assets/placeholder_box.png",
         width: width,
         height: height,
         fit: BoxFit.cover,
