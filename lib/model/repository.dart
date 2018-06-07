@@ -189,7 +189,7 @@ final Game mgsurvive = new Game(
   screenshots: [
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_1.jpg',
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_2.jpg',
-    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_2.jpg',
+    'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_3.jpg',
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_4.jpg',
   ],
 );

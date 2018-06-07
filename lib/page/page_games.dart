@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'scroll_horizontal_game.dart';
-import 'model/repository.dart';
+import 'package:stream_games/controller/scroll_horizontal_game.dart';
+import 'package:stream_games/model/repository.dart';
 
 class GamesPage extends StatefulWidget {
   GamesPage({Key key}) : super(key: key);

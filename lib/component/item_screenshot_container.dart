@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'item_image_height.dart';
+import 'package:stream_games/ui/item_image_height.dart';
 
 class ScreenshotContainerItem extends StatelessWidget {
   ScreenshotContainerItem(this.buildContext, this.screenshot, {this.height = 400.0});
