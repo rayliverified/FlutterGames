@@ -32,10 +32,13 @@ class GameDetailHeader extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              new GameBoxItem(
-                context,
-                game,
-                width: 150.0,
+              new Hero(
+                  tag: game.name,
+                  child: new GameBoxItem(
+                    context,
+                    game,
+                    width: 150.0,
+                  )
               ),
               new Expanded(
                 child: new Padding(
@@ -71,14 +74,14 @@ class GameDetailHeader extends StatelessWidget {
                                   ),
                                   new Text("Trailer",
                                       style:
-                                          Theme.of(context).textTheme.display2),
+                                      Theme.of(context).textTheme.display2),
                                 ],
                               ),
                               padding: const EdgeInsets.fromLTRB(
                                   6.0, 0.0, 12.0, 0.0),
                               shape: new RoundedRectangleBorder(
                                   borderRadius:
-                                      new BorderRadius.circular(30.0)),
+                                  new BorderRadius.circular(30.0)),
                               borderSide: new BorderSide(
                                   color: Colors.black54, width: 2.0),
                               highlightColor: Colors.white70,
@@ -100,14 +103,14 @@ class GameDetailHeader extends StatelessWidget {
                                   ),
                                   new Text("Wishlist",
                                       style:
-                                          Theme.of(context).textTheme.display2),
+                                      Theme.of(context).textTheme.display2),
                                 ],
                               ),
                               padding: const EdgeInsets.fromLTRB(
                                   6.0, 0.0, 12.0, 0.0),
                               shape: new RoundedRectangleBorder(
                                   borderRadius:
-                                      new BorderRadius.circular(30.0)),
+                                  new BorderRadius.circular(30.0)),
                               borderSide: new BorderSide(
                                   color: Colors.black54, width: 2.0),
                               highlightColor: Colors.white70,

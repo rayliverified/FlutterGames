@@ -18,7 +18,10 @@ class GameContainerItem extends StatelessWidget {
         child: new Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            new GameBoxItem(context, game, width: 120.0),
+            new Hero(
+                tag: game.name,
+                child: new GameBoxItem(context, game, width: 120.0),
+            ),
             new Padding(padding: const EdgeInsets.only(top: 6.0)),
             new ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 120.0),
