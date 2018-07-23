@@ -35,13 +35,21 @@ Flutter is very new so there are some features and libraries missing that would 
 
 Something to view images with. Android doesn't have a good image viewing library either (sigh).
 
+- What's the intented goal? (not sure I understand the usecase/question)
+
 >Change Button's Inner Contents on Press
 
 There's no way to set text/icon color when a button is pressed. This lack of functionality really limits the range of buttons one can create. 
 
+- Perhaps this should be part of handling state? 
+
 >Video Player
 
 Something to play trailer videos or just videos in general.
+
+- https://github.com/flutter/flutter/blob/master/examples/flutter_gallery/lib/demo/video_demo.dart
+- https://github.com/flutter/plugins/tree/master/packages/video_player
+- https://github.com/brianegan/chewie
 
 ---
 
