@@ -31,17 +31,21 @@ Flutter is very new so there are some features and libraries missing that would 
 
 ---
 
->Image Gallery
+>Image Gallery ✔️
 
 Something to view images with. Android doesn't have a good image viewing library either (sigh).
 
+**UPDATE:** https://github.com/tinylife-io/flutter_scroll_gallery
+
 >Change Button's Inner Contents on Press
 
-There's no way to set text/icon color when a button is pressed. This lack of functionality really limits the range of buttons one can create. 
+There's no way to set text/icon color when a button is pressed. This lack of functionality really limits the range of buttons one can create.
 
->Video Player
+>Video Player ✔️
 
 Something to play trailer videos or just videos in general.
+
+**UPDATE:** https://github.com/brianegan/chewie
 
 ---
 
