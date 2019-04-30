@@ -12,6 +12,7 @@ class FlutterGames extends StatelessWidget {
       title: 'Flutter Games',
       theme: defaultTheme,
       home: new MainPage(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
