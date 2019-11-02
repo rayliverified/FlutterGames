@@ -1,23 +1,23 @@
 import 'package:flutter/material.dart';
-
 import 'package:stream_games/ui/item_image_height.dart';
 
 class ScreenshotContainerItem extends StatelessWidget {
-  ScreenshotContainerItem(this.buildContext, this.screenshot, {this.height = 400.0});
+  ScreenshotContainerItem(this.buildContext, this.screenshot,
+      {this.height = 400.0});
   final BuildContext buildContext;
   final String screenshot;
   final double height;
 
   @override
   Widget build(BuildContext context) {
-    return new Padding(
+    return Padding(
       padding: const EdgeInsets.only(right: 12.0),
-      child: new InkWell(
+      child: InkWell(
         onTap: () => {},
-        child: new Column(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            new ImageHeightItem(context, screenshot, height),
+            ImageHeightItem(context, screenshot, height),
           ],
         ),
       ),

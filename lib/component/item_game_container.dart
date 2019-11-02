@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'package:stream_games/model/game.dart';
-import "package:stream_games/ui/item_game_box.dart";
 import "package:stream_games/page/page_game_details.dart";
+import "package:stream_games/ui/item_game_box.dart";
 
 class GameContainerItem extends StatelessWidget {
   GameContainerItem(this.buildContext, this.game);
@@ -11,28 +10,28 @@ class GameContainerItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Padding(
+    return Padding(
       padding: const EdgeInsets.only(right: 12.0),
-      child: new InkWell(
+      child: InkWell(
         onTap: () => _goGameDetailsPage(context, game),
-        child: new Column(
+        child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            new Hero(
-                tag: game.name,
-                child: new GameBoxItem(context, game, width: 120.0),
+            Hero(
+              tag: game.name,
+              child: GameBoxItem(context, game, width: 120.0),
             ),
-            new Padding(padding: const EdgeInsets.only(top: 6.0)),
-            new ConstrainedBox(
+            Padding(padding: const EdgeInsets.only(top: 6.0)),
+            ConstrainedBox(
                 constraints: const BoxConstraints(maxWidth: 120.0),
-                child: new Column(
+                child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    new Text(game.name,
+                    Text(game.name,
                         style: Theme.of(context).textTheme.display1,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis),
-                    new Text(game.getPlatforms(),
+                    Text(game.getPlatforms(),
                         style: Theme.of(context).textTheme.caption,
                         maxLines: 1,
                         overflow: TextOverflow.fade),
@@ -46,9 +45,9 @@ class GameContainerItem extends StatelessWidget {
 
   void _goGameDetailsPage(BuildContext context, Game game) {
     Navigator.of(context).push(
-      new MaterialPageRoute(
+      MaterialPageRoute(
         builder: (c) {
-          return new GameDetailsPage(game);
+          return GameDetailsPage(game);
         },
       ),
     );

@@ -1,14 +1,13 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-
+import 'package:flutter/material.dart';
 import 'package:stream_games/bottom_menu_items.dart';
 import 'package:stream_games/icons.dart';
-import 'package:stream_games/page/page_games.dart';
 import 'package:stream_games/page/page_coming_soon.dart';
+import 'package:stream_games/page/page_games.dart';
 
 class MainPage extends StatefulWidget {
   @override
-  _MainPageState createState() => new _MainPageState();
+  _MainPageState createState() => _MainPageState();
 }
 
 class _MainPageState extends State<MainPage> {
@@ -16,43 +15,42 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    return new Material(
-      borderRadius: new BorderRadius.circular(8.0),
-      child: new Scaffold(
-        appBar: new AppBar(
+    return Material(
+      borderRadius: BorderRadius.circular(8.0),
+      child: Scaffold(
+        appBar: AppBar(
           elevation: 0.0,
           centerTitle: false,
           backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
-          title: new Row(
+          title: Row(
             children: [
               Text(
                 menuItemName(_layoutSelection),
                 style: Theme.of(context).textTheme.title,
               ),
-              new Padding(padding: new EdgeInsets.only(right: 8.0)),
-              new Icon(menuIcon(_layoutSelection),
-                  size: 28.0, color: Colors.black),
+              Padding(padding: EdgeInsets.only(right: 8.0)),
+              Icon(menuIcon(_layoutSelection), size: 28.0, color: Colors.black),
             ],
           ),
           actions: <Widget>[
-            new Center(
-              child: new IconButton(
+            Center(
+              child: IconButton(
                   onPressed: () => {},
-                  icon: new Stack(
+                  icon: Stack(
                     children: <Widget>[
-                      new Align(
+                      Align(
                         alignment: Alignment.center,
-                        child: new Icon(Icons.shopping_cart,
+                        child: Icon(Icons.shopping_cart,
                             size: 28.0, color: Colors.black),
                       ),
-                      new Align(
+                      Align(
                         alignment: Alignment.bottomRight,
-                        child: new CircleAvatar(
+                        child: CircleAvatar(
                           radius: 8.0,
                           backgroundColor: Colors.green,
-                          child: new Text("0",
-                              style: new TextStyle(
+                          child: Text("0",
+                              style: TextStyle(
                                   color: Colors.white, fontSize: 10.0)),
                         ),
                       ),
@@ -61,7 +59,7 @@ class _MainPageState extends State<MainPage> {
             ),
           ],
         ),
-        bottomNavigationBar: new CupertinoTabBar(
+        bottomNavigationBar: CupertinoTabBar(
           activeColor: Colors.blueAccent,
           backgroundColor: Colors.white70,
           items: <BottomNavigationBarItem>[

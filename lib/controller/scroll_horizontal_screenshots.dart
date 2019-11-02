@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:stream_games/component/item_screenshot_container.dart';
 
 class HorizontalScreenshotController extends StatelessWidget {
@@ -10,14 +9,15 @@ class HorizontalScreenshotController extends StatelessWidget {
   Widget build(BuildContext context) {
     const double height = 240.0;
 
-    return new SizedBox.fromSize(
+    return SizedBox.fromSize(
       size: const Size.fromHeight(height),
-      child: new ListView.builder(
+      child: ListView.builder(
           itemCount: screenshots.length,
           scrollDirection: Axis.horizontal,
           padding: const EdgeInsets.only(left: 12.0),
           itemBuilder: (BuildContext context, int position) {
-            return ScreenshotContainerItem(context, screenshots[position], height: height - 16.0);
+            return ScreenshotContainerItem(context, screenshots[position],
+                height: height - 16.0);
           }),
     );
   }

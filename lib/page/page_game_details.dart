@@ -1,10 +1,9 @@
-import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
-
-import 'package:stream_games/model/game.dart';
-import 'package:stream_games/component/item_header_game.dart';
+import 'package:flutter/material.dart';
 import 'package:stream_games/component/item_description.dart';
+import 'package:stream_games/component/item_header_game.dart';
 import 'package:stream_games/controller/scroll_horizontal_screenshots.dart';
+import 'package:stream_games/model/game.dart';
 
 class GameDetailsPage extends StatefulWidget {
   GameDetailsPage(this.game, {Key key}) : super(key: key);
@@ -12,44 +11,46 @@ class GameDetailsPage extends StatefulWidget {
   final Game game;
 
   @override
-  _GameDetailsPageState createState() => new _GameDetailsPageState();
+  _GameDetailsPageState createState() => _GameDetailsPageState();
 }
 
 class _GameDetailsPageState extends State<GameDetailsPage> {
   @override
   Widget build(BuildContext context) {
-    return new Material(
-      borderRadius: new BorderRadius.circular(8.0),
-      child: new SingleChildScrollView(
-        child: new Column(
+    return Material(
+      borderRadius: BorderRadius.circular(8.0),
+      child: SingleChildScrollView(
+        child: Column(
           children: [
-            new GameDetailHeader(widget.game),
-            new Padding(
+            GameDetailHeader(widget.game),
+            Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 32.0, 16.0, 0.0),
-              child: new SizedBox(
+              child: SizedBox(
                 width: double.infinity,
                 // height: double.infinity,
-                child: new RaisedButton(
+                child: RaisedButton(
                   onPressed: () => {},
-                  child: new Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      new Padding(
+                      Padding(
                         padding: const EdgeInsets.only(right: 8.0),
-                        child: new Icon(
+                        child: Icon(
                           Icons.adjust,
                           color: Colors.white,
                         ),
                       ),
-                      new Text(
+                      Text(
                         "Rent",
-                        style: Theme.of(context).textTheme.subhead.apply(color: Colors.white),
+                        style: Theme.of(context)
+                            .textTheme
+                            .subhead
+                            .apply(color: Colors.white),
                       ),
                     ],
                   ),
-                  shape: new RoundedRectangleBorder(
-                      borderRadius:
-                      new BorderRadius.circular(4.0)),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4.0)),
                   padding: const EdgeInsets.all(12.0),
                   color: Colors.green,
                   highlightColor: Colors.green.shade400,
@@ -59,34 +60,36 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                 ),
               ),
             ),
-            new Padding(
+            Padding(
               padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
-              child: new SizedBox(
+              child: SizedBox(
                 width: double.infinity,
                 // height: double.infinity,
-                child: new OutlineButton(
+                child: OutlineButton(
                   onPressed: () => {},
-                  child: new Row(
+                  child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
-                      new Padding(
+                      Padding(
                         padding: const EdgeInsets.only(right: 8.0),
-                        child: new Icon(
+                        child: Icon(
                           Icons.archive,
                           color: Colors.green,
                         ),
                       ),
-                      new Text(
+                      Text(
                         "Buy",
-                        style: Theme.of(context).textTheme.subhead.apply(color: Colors.green),
+                        style: Theme.of(context)
+                            .textTheme
+                            .subhead
+                            .apply(color: Colors.green),
                       ),
                     ],
                   ),
-                  shape: new RoundedRectangleBorder(
-                      borderRadius:
-                      new BorderRadius.circular(4.0)),
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(4.0)),
                   padding: const EdgeInsets.all(12.0),
-                  borderSide: new BorderSide(color: Colors.green, width: 4.0),
+                  borderSide: BorderSide(color: Colors.green, width: 4.0),
                   color: Colors.white,
                   highlightColor: Colors.white70,
                   splashColor: Colors.green.shade200,
@@ -95,10 +98,12 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                 ),
               ),
             ),
-            new Padding(padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
-                child: new DescriptionText(widget.game.description)),
-            new Padding(padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
-                child: new HorizontalScreenshotController(widget.game.screenshots)),
+            Padding(
+                padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
+                child: DescriptionText(widget.game.description)),
+            Padding(
+                padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
+                child: HorizontalScreenshotController(widget.game.screenshots)),
           ],
         ),
       ),

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:stream_games/icons.dart';
 import 'package:stream_games/model/game.dart';
 import 'package:stream_games/ui/item_game_box.dart';
@@ -13,106 +12,101 @@ class GameDetailHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return new Stack(
+    return Stack(
       children: <Widget>[
-        new Padding(
+        Padding(
           padding: const EdgeInsets.only(bottom: 150.0),
           child: _buildDiagonalImageBackground(context),
         ),
-        new Positioned(
+        Positioned(
           top: 26.0,
           left: 4.0,
-          child: new BackButton(color: Colors.white),
+          child: BackButton(color: Colors.white),
         ),
-        new Positioned(
+        Positioned(
           bottom: 0.0,
           left: 16.0,
           right: 16.0,
-          child: new Row(
+          child: Row(
             crossAxisAlignment: CrossAxisAlignment.end,
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
-              new Hero(
+              Hero(
                   tag: game.name,
-                  child: new GameBoxItem(
+                  child: GameBoxItem(
                     context,
                     game,
                     width: 150.0,
-                  )
-              ),
-              new Expanded(
-                child: new Padding(
+                  )),
+              Expanded(
+                child: Padding(
                   padding: const EdgeInsets.only(left: 16.0),
-                  child: new Column(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      new Text(
+                      Text(
                         game.name,
                         style: Theme.of(context).textTheme.subhead,
                         maxLines: 3,
                         overflow: TextOverflow.fade,
                       ),
-                      new Padding(
+                      Padding(
                         padding: const EdgeInsets.only(top: 8.0),
-                        child: new RatingInformation(game),
+                        child: RatingInformation(game),
                       ),
-                      new Padding(
+                      Padding(
                         padding: const EdgeInsets.only(top: 12.0),
-                        child: new Row(
+                        child: Row(
                           children: [
-                            new OutlineButton(
+                            OutlineButton(
                               onPressed: () => {},
-                              child: new Row(
+                              child: Row(
                                 children: <Widget>[
-                                  new Icon(
+                                  Icon(
                                     playOutlineIcon,
-                                    color: Theme
-                                        .of(context)
+                                    color: Theme.of(context)
                                         .textTheme
                                         .display2
                                         .color,
                                   ),
-                                  new Text("Trailer",
+                                  Text("Trailer",
                                       style:
-                                      Theme.of(context).textTheme.display2),
+                                          Theme.of(context).textTheme.display2),
                                 ],
                               ),
                               padding: const EdgeInsets.fromLTRB(
                                   6.0, 0.0, 12.0, 0.0),
-                              shape: new RoundedRectangleBorder(
-                                  borderRadius:
-                                  new BorderRadius.circular(30.0)),
-                              borderSide: new BorderSide(
-                                  color: Colors.black54, width: 2.0),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30.0)),
+                              borderSide:
+                                  BorderSide(color: Colors.black54, width: 2.0),
                               highlightColor: Colors.white70,
                               splashColor: Colors.black12,
                               highlightElevation: 0.0,
                             ),
-                            new Padding(padding: EdgeInsets.only(left: 8.0)),
-                            new OutlineButton(
+                            Padding(padding: EdgeInsets.only(left: 8.0)),
+                            OutlineButton(
                               onPressed: () => {},
-                              child: new Row(
+                              child: Row(
                                 children: <Widget>[
-                                  new Icon(
+                                  Icon(
                                     plusIcon,
-                                    color: Theme
-                                        .of(context)
+                                    color: Theme.of(context)
                                         .textTheme
                                         .display2
                                         .color,
                                   ),
-                                  new Text("Wishlist",
+                                  Text("Wishlist",
                                       style:
-                                      Theme.of(context).textTheme.display2),
+                                          Theme.of(context).textTheme.display2),
                                 ],
                               ),
                               padding: const EdgeInsets.fromLTRB(
                                   6.0, 0.0, 12.0, 0.0),
-                              shape: new RoundedRectangleBorder(
-                                  borderRadius:
-                                  new BorderRadius.circular(30.0)),
-                              borderSide: new BorderSide(
-                                  color: Colors.black54, width: 2.0),
+                              shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30.0)),
+                              borderSide:
+                                  BorderSide(color: Colors.black54, width: 2.0),
                               highlightColor: Colors.white70,
                               splashColor: Colors.black12,
                               highlightElevation: 0.0,
@@ -134,8 +128,8 @@ class GameDetailHeader extends StatelessWidget {
   Widget _buildDiagonalImageBackground(BuildContext context) {
     var screenWidth = MediaQuery.of(context).size.width;
 
-    return new DiagonallyCutColoredImage(
-      new FadeInImage.assetNetwork(
+    return DiagonallyCutColoredImage(
+      FadeInImage.assetNetwork(
         image: game.cover,
         placeholder: "assets/placeholder_cover.jpg",
         width: screenWidth,

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:stream_games/controller/scroll_horizontal_game.dart';
 import 'package:stream_games/model/repository.dart';
 
@@ -7,31 +6,31 @@ class GamesPage extends StatefulWidget {
   GamesPage({Key key}) : super(key: key);
 
   @override
-  _GamesPageState createState() => new _GamesPageState();
+  _GamesPageState createState() => _GamesPageState();
 }
 
 class _GamesPageState extends State<GamesPage> {
   @override
   Widget build(BuildContext context) {
-    return new SingleChildScrollView(
-      child: new Column(
+    return SingleChildScrollView(
+      child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          new Padding(
+          Padding(
             padding: const EdgeInsets.fromLTRB(16.0, 6.0, 8.0, 8.0),
-            child: new Row(
+            child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  new Text(
+                  Text(
                     "New Releases",
                     style: Theme.of(context).textTheme.subhead,
                   ),
-                  new InkWell(
+                  InkWell(
                     onTap: () => {},
-                    child: new Padding(
+                    child: Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 8.0, vertical: 4.0),
-                      child: new Text(
+                      child: Text(
                         "Browse All",
                         style: Theme.of(context).textTheme.display2,
                       ),
@@ -39,23 +38,23 @@ class _GamesPageState extends State<GamesPage> {
                   ),
                 ]),
           ),
-          new HorizontalGameController(newGamesList),
-          new Divider(height: 2.0, indent: 8.0),
-          new Padding(
+          HorizontalGameController(newGamesList),
+          Divider(height: 2.0, indent: 8.0),
+          Padding(
             padding: const EdgeInsets.fromLTRB(16.0, 12.0, 8.0, 8.0),
-            child: new Row(
+            child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  new Text(
+                  Text(
                     "Most Popular",
                     style: Theme.of(context).textTheme.subhead,
                   ),
-                  new InkWell(
+                  InkWell(
                     onTap: () => {},
-                    child: new Padding(
+                    child: Padding(
                       padding: const EdgeInsets.symmetric(
                           horizontal: 8.0, vertical: 4.0),
-                      child: new Text(
+                      child: Text(
                         "Browse All",
                         style: Theme.of(context).textTheme.display2,
                       ),
@@ -63,7 +62,7 @@ class _GamesPageState extends State<GamesPage> {
                   ),
                 ]),
           ),
-          new HorizontalGameController(popularGamesList),
+          HorizontalGameController(popularGamesList),
         ],
       ),
     );
