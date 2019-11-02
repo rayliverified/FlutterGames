@@ -100,11 +100,9 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
               ),
             ),
             Padding(
-                padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
+                padding: const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 0.0),
                 child: DescriptionText(widget.game.description)),
-            Padding(
-                padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
-                child: HorizontalScreenshotController(widget.game.screenshots)),
+            HorizontalScreenshotController(widget.game.screenshots),
           ],
         ),
       ),
