@@ -16,11 +16,11 @@ class _MainPageState extends State<MainPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      borderRadius: BorderRadius.circular(8.0),
+      borderRadius: BorderRadius.circular(8),
       clipBehavior: Clip.hardEdge,
       child: Scaffold(
         appBar: AppBar(
-          elevation: 0.0,
+          elevation: 0,
           centerTitle: false,
           backgroundColor: Colors.white,
           automaticallyImplyLeading: false,
@@ -30,8 +30,8 @@ class _MainPageState extends State<MainPage> {
                 menuItemName(_layoutSelection),
                 style: Theme.of(context).textTheme.title,
               ),
-              Padding(padding: EdgeInsets.only(right: 8.0)),
-              Icon(menuIcon(_layoutSelection), size: 28.0, color: Colors.black),
+              Padding(padding: EdgeInsets.only(right: 8)),
+              Icon(menuIcon(_layoutSelection), size: 28, color: Colors.black),
             ],
           ),
           actions: <Widget>[
@@ -43,16 +43,16 @@ class _MainPageState extends State<MainPage> {
                       Align(
                         alignment: Alignment.center,
                         child: Icon(Icons.shopping_cart,
-                            size: 28.0, color: Colors.black),
+                            size: 28, color: Colors.black),
                       ),
                       Align(
                         alignment: Alignment.bottomRight,
                         child: CircleAvatar(
-                          radius: 8.0,
+                          radius: 8,
                           backgroundColor: Colors.green,
                           child: Text("0",
-                              style: TextStyle(
-                                  color: Colors.white, fontSize: 10.0)),
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 10)),
                         ),
                       ),
                     ],

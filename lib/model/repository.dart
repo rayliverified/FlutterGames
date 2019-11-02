@@ -21,7 +21,7 @@ final Game pvzgw2 = Game(
     'XBOX ONE',
     'PS4',
   ],
-  rating: 4.0,
+  rating: 4,
   screenshots: [
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/pvzgw2_1.jpg',
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/pvzgw2_2.jpg',
@@ -104,7 +104,7 @@ final Game detroitbh = Game(
     platforms: [
       'PS4',
     ],
-    rating: 4.0,
+    rating: 4,
     screenshots: [
       'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_1.jpg',
       'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/detroitbh_2.jpg',
@@ -186,7 +186,7 @@ final Game mgsurvive = Game(
     'XBOX ONE',
     'PS4',
   ],
-  rating: 3.0,
+  rating: 3,
   screenshots: [
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_1.jpg',
     'https://raw.githubusercontent.com/searchy2/FlutterGames/master/images/screenshot/mgsurvive_2.jpg',

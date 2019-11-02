@@ -18,14 +18,14 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      borderRadius: BorderRadius.circular(8.0),
+      borderRadius: BorderRadius.circular(8),
       clipBehavior: Clip.hardEdge,
       child: SingleChildScrollView(
         child: Column(
           children: [
             GameDetailHeader(widget.game),
             Padding(
-              padding: const EdgeInsets.fromLTRB(16.0, 32.0, 16.0, 0.0),
+              padding: const EdgeInsets.fromLTRB(16, 32, 16, 0),
               child: SizedBox(
                 width: double.infinity,
                 // height: double.infinity,
@@ -35,7 +35,7 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Padding(
-                        padding: const EdgeInsets.only(right: 8.0),
+                        padding: const EdgeInsets.only(right: 8),
                         child: Icon(
                           Icons.adjust,
                           color: Colors.white,
@@ -51,18 +51,18 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                     ],
                   ),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0)),
-                  padding: const EdgeInsets.all(12.0),
+                      borderRadius: BorderRadius.circular(4)),
+                  padding: const EdgeInsets.all(12),
                   color: Colors.green,
                   highlightColor: Colors.green.shade400,
                   splashColor: Colors.green.shade400,
-                  elevation: 8.0,
-                  highlightElevation: 10.0,
+                  elevation: 8,
+                  highlightElevation: 10,
                 ),
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(16.0, 16.0, 16.0, 0.0),
+              padding: const EdgeInsets.fromLTRB(16, 16, 16, 0),
               child: SizedBox(
                 width: double.infinity,
                 // height: double.infinity,
@@ -72,7 +72,7 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Padding(
-                        padding: const EdgeInsets.only(right: 8.0),
+                        padding: const EdgeInsets.only(right: 8),
                         child: Icon(
                           Icons.archive,
                           color: Colors.green,
@@ -88,19 +88,19 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                     ],
                   ),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(4.0)),
-                  padding: const EdgeInsets.all(12.0),
-                  borderSide: BorderSide(color: Colors.green, width: 4.0),
+                      borderRadius: BorderRadius.circular(4)),
+                  padding: const EdgeInsets.all(12),
+                  borderSide: BorderSide(color: Colors.green, width: 4),
                   color: Colors.white,
                   highlightColor: Colors.white70,
                   splashColor: Colors.green.shade200,
-                  highlightElevation: 0.0,
+                  highlightElevation: 0,
                   highlightedBorderColor: Colors.green.shade400,
                 ),
               ),
             ),
             Padding(
-                padding: const EdgeInsets.fromLTRB(16.0, 24.0, 16.0, 0.0),
+                padding: const EdgeInsets.fromLTRB(16, 24, 16, 0),
                 child: DescriptionText(widget.game.description)),
             HorizontalScreenshotController(widget.game.screenshots),
           ],

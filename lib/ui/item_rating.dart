@@ -40,7 +40,7 @@ class RatingInformation extends StatelessWidget {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 4.0),
+          padding: const EdgeInsets.only(top: 4),
           child: Text(
             'Rating',
             style: ratingCaptionStyle,
@@ -55,7 +55,7 @@ class RatingInformation extends StatelessWidget {
       children: [
         _buildRatingBar(theme),
 //        Padding(
-//          padding: const EdgeInsets.only(top: 4.0, left: 4.0),
+//          padding: const EdgeInsets.only(top: 4, left: 4),
 //          child: Text(
 //            'Tap to Rate',
 //            style: ratingCaptionStyle,
@@ -69,7 +69,7 @@ class RatingInformation extends StatelessWidget {
       children: [
         numericRating,
         Padding(
-          padding: const EdgeInsets.only(left: 16.0),
+          padding: const EdgeInsets.only(left: 16),
           child: starRating,
         ),
       ],

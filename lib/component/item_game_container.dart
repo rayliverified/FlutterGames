@@ -11,7 +11,7 @@ class GameContainerItem extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(right: 12.0),
+      padding: const EdgeInsets.only(right: 12),
       child: InkWell(
         onTap: () => _goGameDetailsPage(context, game),
         child: Column(
@@ -19,11 +19,11 @@ class GameContainerItem extends StatelessWidget {
           children: [
             Hero(
               tag: game.name,
-              child: GameBoxItem(context, game, width: 120.0),
+              child: GameBoxItem(context, game, width: 120),
             ),
-            Padding(padding: const EdgeInsets.only(top: 6.0)),
+            Padding(padding: const EdgeInsets.only(top: 6)),
             ConstrainedBox(
-                constraints: const BoxConstraints(maxWidth: 120.0),
+                constraints: const BoxConstraints(maxWidth: 120),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [

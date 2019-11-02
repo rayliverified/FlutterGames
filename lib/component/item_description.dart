@@ -15,10 +15,10 @@ class DescriptionText extends StatelessWidget {
       children: [
         Text(
           'Summary',
-          style: textTheme.display1.apply(fontSizeDelta: 2.0),
+          style: textTheme.display1.apply(fontSizeDelta: 2),
         ),
         Padding(
-          padding: const EdgeInsets.only(top: 8.0),
+          padding: const EdgeInsets.only(top: 8),
           child: Text(
             text,
             style: textTheme.body1,
@@ -36,7 +36,7 @@ class DescriptionText extends StatelessWidget {
             ),
             Icon(
               Icons.keyboard_arrow_down,
-              size: 18.0,
+              size: 18,
               color: theme.accentColor,
             ),
           ],

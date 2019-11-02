@@ -9,11 +9,11 @@ class HorizontalGameController extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox.fromSize(
-      size: const Size.fromHeight(240.0),
+      size: const Size.fromHeight(240),
       child: ListView.builder(
           itemCount: gameItems.length,
           scrollDirection: Axis.horizontal,
-          padding: const EdgeInsets.only(left: 12.0, top: 4.0),
+          padding: const EdgeInsets.only(left: 12, top: 4),
           itemBuilder: (BuildContext context, int position) {
             return GameContainerItem(context, gameItems[position]);
           }),

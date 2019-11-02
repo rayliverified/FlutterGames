@@ -19,31 +19,31 @@ TextTheme _buildDefaultTextTheme(TextTheme base) {
     title: base.title.copyWith(
       color: Colors.black,
       fontWeight: FontWeight.w700,
-      fontSize: 30.0,
+      fontSize: 30,
     ),
     subhead: base.subhead.copyWith(
       color: Colors.black,
       fontWeight: FontWeight.w700,
-      fontSize: 22.0,
+      fontSize: 22,
     ),
     display1: base.display1.copyWith(
       color: Colors.black87,
       fontWeight: FontWeight.w500,
-      fontSize: 16.0,
+      fontSize: 16,
     ),
     display2: base.display2.copyWith(
-      fontSize: 14.0,
+      fontSize: 14,
     ),
     caption: base.caption.copyWith(
       fontWeight: FontWeight.w400,
-      fontSize: 14.0,
+      fontSize: 14,
     ),
     body1: base.body1.copyWith(
-      fontSize: 16.0,
+      fontSize: 16,
     ),
     body2: base.body2.copyWith(
       fontWeight: FontWeight.w500,
-      fontSize: 16.0,
+      fontSize: 16,
     ),
   );
 }

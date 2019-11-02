@@ -13,9 +13,9 @@ class ImageHeightItem extends StatelessWidget {
     double width = imageRatio * height;
 
     return Material(
-      borderRadius: BorderRadius.circular(4.0),
+      borderRadius: BorderRadius.circular(4),
       clipBehavior: Clip.hardEdge,
-      elevation: 8.0,
+      elevation: 8,
       shadowColor: Color(0xCC000000),
       child: FadeInImage.assetNetwork(
         image: image,
