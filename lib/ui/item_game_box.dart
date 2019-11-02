@@ -15,6 +15,7 @@ class GameBoxItem extends StatelessWidget {
 
     return Material(
       borderRadius: BorderRadius.circular(4.0),
+      clipBehavior: Clip.hardEdge,
       elevation: 8.0,
       shadowColor: Color(0xCC000000),
       child: FadeInImage.assetNetwork(

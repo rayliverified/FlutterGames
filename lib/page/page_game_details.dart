@@ -19,6 +19,7 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
   Widget build(BuildContext context) {
     return Material(
       borderRadius: BorderRadius.circular(8.0),
+      clipBehavior: Clip.hardEdge,
       child: SingleChildScrollView(
         child: Column(
           children: [
