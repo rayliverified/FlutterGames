@@ -1,4 +1,4 @@
-package stream.stream_games
+package stream.games
 
 import android.os.Bundle
 import io.flutter.app.FlutterActivity
