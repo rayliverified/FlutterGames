@@ -12,14 +12,11 @@ class ScreenshotContainerItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(top: 16, right: 12, bottom: 16),
-      child: InkWell(
-        onTap: () => {},
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            ImageHeightItem(context, screenshot, height - 32),
-          ],
-        ),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ImageHeightItem(context, screenshot, height - 32),
+        ],
       ),
     );
   }
