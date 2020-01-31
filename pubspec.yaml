@@ -3,9 +3,6 @@ description: Flutter app for purchasing and renting games.
 
 version: 1.0.0
 
-environment:
-  sdk: ">=2.1.0 <3.0.0"
-
 dependencies:
   flutter:
     sdk: flutter
@@ -19,3 +16,7 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+
+environment:
+  sdk: ">=2.1.0 <3.0.0"
+  flutter: ">=1.13.8 <2.0.0"
