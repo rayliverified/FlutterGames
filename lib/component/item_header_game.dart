@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:stream_games/icons.dart';
-import 'package:stream_games/model/game.dart';
-import 'package:stream_games/ui/item_game_box.dart';
-import 'package:stream_games/ui/item_header_diagonal.dart';
-import 'package:stream_games/ui/item_rating.dart';
+import 'package:flutter_games/icons.dart';
+import 'package:flutter_games/model/game.dart';
+import 'package:flutter_games/ui/item_game_box.dart';
+import 'package:flutter_games/ui/item_header_diagonal.dart';
+import 'package:flutter_games/ui/item_rating.dart';
 
 class GameDetailHeader extends StatelessWidget {
   GameDetailHeader(this.game);

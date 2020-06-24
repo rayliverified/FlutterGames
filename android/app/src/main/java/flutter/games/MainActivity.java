@@ -1,4 +1,4 @@
-package stream.games;
+package flutter.games;
 
 import android.os.Bundle;
 

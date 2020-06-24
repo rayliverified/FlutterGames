@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stream_games/ui/item_image_height.dart';
+import 'package:flutter_games/ui/item_image_height.dart';
 
 class ScreenshotContainerItem extends StatelessWidget {
   ScreenshotContainerItem(this.buildContext, this.screenshot,

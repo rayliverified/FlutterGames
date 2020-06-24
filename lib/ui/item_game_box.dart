@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stream_games/model/game.dart';
+import 'package:flutter_games/model/game.dart';
 
 class GameBoxItem extends StatelessWidget {
   static const IMAGE_RATIO = 1.50;

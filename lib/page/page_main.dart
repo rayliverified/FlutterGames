@@ -1,9 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:stream_games/bottom_menu_items.dart';
-import 'package:stream_games/icons.dart';
-import 'package:stream_games/page/page_coming_soon.dart';
-import 'package:stream_games/page/page_games.dart';
+import 'package:flutter_games/bottom_menu_items.dart';
+import 'package:flutter_games/icons.dart';
+import 'package:flutter_games/page/page_coming_soon.dart';
+import 'package:flutter_games/page/page_games.dart';
 
 class MainPage extends StatefulWidget {
   @override

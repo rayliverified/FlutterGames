@@ -28,7 +28,7 @@ android {
     }
 
     defaultConfig {
-        applicationId "stream.games"
+        applicationId "flutter.games"
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1

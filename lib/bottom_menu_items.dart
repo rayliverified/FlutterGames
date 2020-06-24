@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:stream_games/icons.dart';
+import 'package:flutter_games/icons.dart';
 
 enum BottomMenu {
   games,

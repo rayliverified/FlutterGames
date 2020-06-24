@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:stream_games/model/game.dart';
-import "package:stream_games/page/page_game_details.dart";
-import "package:stream_games/ui/item_game_box.dart";
+import 'package:flutter_games/model/game.dart';
+import "package:flutter_games/page/page_game_details.dart";
+import "package:flutter_games/ui/item_game_box.dart";
 
 class GameContainerItem extends StatelessWidget {
   GameContainerItem(this.buildContext, this.game);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:stream_games/component/item_game_container.dart';
-import 'package:stream_games/model/game.dart';
+import 'package:flutter_games/component/item_game_container.dart';
+import 'package:flutter_games/model/game.dart';
 
 class HorizontalGameController extends StatelessWidget {
   HorizontalGameController(this.gameItems);
