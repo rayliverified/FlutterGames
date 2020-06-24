@@ -1,19 +1,23 @@
-[![GitHub release](https://img.shields.io/github/release/searchy2/FlutterGames.svg?style=flat-square)](https://github.com/searchy2/FlutterGames/releases) [![GitHub Release Date](https://img.shields.io/github/release-date/searchy2/FlutterGames.svg?style=flat-square)](https://github.com/searchy2/FlutterGames) [![GitHub issues](https://img.shields.io/github/issues/searchy2/FlutterGames.svg?style=flat-square)](https://github.com/searchy2/FlutterGames) [![API](https://img.shields.io/badge/API-15%2B-blue.svg?style=flat-square)](https://github.com/searchy2/FlutterGames) [![GitHub top language](https://img.shields.io/github/languages/top/searchy2/FlutterGames.svg?style=flat-square)](https://github.com/searchy2/FlutterGames)
-# Flutter Games
+# [Flutter Games](https://gallery.codelessly.com/flutterwebsites/fluttergames/?utm_medium=link&utm_campaign=title)
+[![Flutter Responsive](https://img.shields.io/badge/flutter-responsive-brightgreen.svg?style=flat-square)](https://github.com/Codelessly/ResponsiveFramework) [![GitHub release](https://img.shields.io/github/release/searchy2/FlutterGames.svg?style=flat-square)](https://github.com/searchy2/FlutterGames/releases) [![GitHub Release Date](https://img.shields.io/github/release-date/searchy2/FlutterGames.svg?style=flat-square)](https://github.com/searchy2/FlutterGames) [![GitHub issues](https://img.shields.io/github/issues/searchy2/FlutterGames.svg?style=flat-square)](https://github.com/searchy2/FlutterGames) [![API](https://img.shields.io/badge/API-15%2B-blue.svg?style=flat-square)](https://github.com/searchy2/FlutterGames) [![GitHub top language](https://img.shields.io/github/languages/top/searchy2/FlutterGames.svg?style=flat-square)](https://github.com/searchy2/FlutterGames) [![Libraries.io for GitHub](https://img.shields.io/librariesio/github/searchy2/FlutterGames.svg?style=flat-square)](https://libraries.io/github/searchy2/FlutterGames) [![License](https://img.shields.io/badge/License-BSD%200--Clause-orange.svg?style=flat-square)](https://opensource.org/licenses/0BSD)
 
-![Screenshots](screenshots/demo.gif)
+<img src="assets/Game-Controller-Logo-iOS.png" width="128">
+
+> ### A Flutter app for purchasing and renting games.
+
+### [View Demo](https://gallery.codelessly.com/flutterwebsites/fluttergames/?utm_medium=link&utm_campaign=demo)
 
 Flutter Games is an app for purchasing and renting games. This demo app is my first adventure in Flutter and I have to say its been a blast!
 
-![Screenshots](screenshots/main_1_540x900.jpg)
-
-If you like this app, you might like some of my other repos too! [View More](http://rayliverified.com/index.php/code/)
+[![Screenshots](screenshots/demo.gif)](https://gallery.codelessly.com/flutterwebsites/fluttergames/?utm_medium=image&utm_campaign=preview)
 
 # Screenshots
 
-![Screenshots](screenshots/details_1_540x900.jpg)
+<img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/main_1_540x900.jpg" width="420"/>
+<img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/details_1_540x900.jpg" width="420"/>
 
-![Screenshots](screenshots/details_2_540x900.jpg)
+<img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/details_2_540x900.jpg" width="420"/>
+<img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/coming_soon_540x900.jpg" width="420"/>
 
 # Flutter is Amazing
 
@@ -74,6 +78,10 @@ If you've fixed a bug or have a feature you've added, just create a pull request
 
 [FlutterMates](https://github.com/CodemateLtd/FlutterMates)
 
+**♥ Sponsor ♥**
+
+[Codelessly - Flutter UI Builder](https://codelessly.com/?utm_medium=link&utm_campaign=direct)
+
 # ★ Get in Touch ★
 <a href="mailto:ray.li.verified@gmail.com">
   <img alt="Ray Li Email"
@@ -101,7 +109,7 @@ If you've fixed a bug or have a feature you've added, just create a pull request
 </a>
 
 #### Search Terms
-flutter, game, movie, demo, sample, rent, buy, shop
+flutter, game, movie, demo, sample, rent, buy, shop, UI
 
 ## License
 
