@@ -13,11 +13,9 @@ Flutter Games is an app for purchasing and renting games. This demo app is my fi
 
 # Screenshots
 
-<img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/main_1_540x900.jpg" width="420"/>
-<img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/details_1_540x900.jpg" width="420"/>
+<img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/main_1_540x900.jpg" width="360"/> <img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/details_1_540x900.jpg" width="360"/>
 
-<img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/details_2_540x900.jpg" width="420"/>
-<img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/coming_soon_540x900.jpg" width="420"/>
+<img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/details_2_540x900.jpg" width="360"/> <img src="https://raw.githubusercontent.com/searchy2/FlutterGames/master/screenshots/coming_soon_540x900.jpg" width="360"/>
 
 # Flutter is Amazing
 
