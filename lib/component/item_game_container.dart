@@ -28,11 +28,11 @@ class GameContainerItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(game.name,
-                        style: Theme.of(context).textTheme.display1,
+                        style: Theme.of(context).textTheme.headlineMedium,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis),
                     Text(game.getPlatforms(),
-                        style: Theme.of(context).textTheme.caption,
+                        style: Theme.of(context).textTheme.bodySmall,
                         maxLines: 1,
                         overflow: TextOverflow.fade),
                   ],

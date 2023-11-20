@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
 
 class DiagonallyCutColoredImage extends StatelessWidget {
-  DiagonallyCutColoredImage(this.image, {@required this.color});
-
   final FadeInImage image;
   final Color color;
+
+  DiagonallyCutColoredImage(this.image, {required this.color});
 
   @override
   Widget build(BuildContext context) {

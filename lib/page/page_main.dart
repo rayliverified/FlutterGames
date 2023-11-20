@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_games/bottom_menu_items.dart';
-import 'package:flutter_games/icons.dart';
 import 'package:flutter_games/page/page_coming_soon.dart';
 import 'package:flutter_games/page/page_games.dart';
 
@@ -12,6 +11,7 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   BottomMenu _layoutSelection = BottomMenu.games;
+  int tabIndex = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -28,7 +28,7 @@ class _MainPageState extends State<MainPage> {
             children: [
               Text(
                 menuItemName(_layoutSelection),
-                style: Theme.of(context).textTheme.title,
+                style: Theme.of(context).textTheme.headlineSmall,
               ),
               Padding(padding: EdgeInsets.only(right: 8)),
               Icon(menuIcon(_layoutSelection), size: 28, color: Colors.black),
@@ -63,26 +63,27 @@ class _MainPageState extends State<MainPage> {
         bottomNavigationBar: CupertinoTabBar(
           activeColor: Colors.blueAccent,
           backgroundColor: Colors.white70,
+          currentIndex: tabIndex,
           items: <BottomNavigationBarItem>[
             _buildMenuItem(
-                icon: controllerOutlineIcon,
-                iconSelected: controllerIcon,
+                icon: CupertinoIcons.game_controller,
+                iconSelected: CupertinoIcons.game_controller_solid,
                 bottomMenu: BottomMenu.games),
             _buildMenuItem(
-                icon: movieOutlineIcon,
-                iconSelected: movieIcon,
+                icon: CupertinoIcons.film,
+                iconSelected: CupertinoIcons.film_fill,
                 bottomMenu: BottomMenu.movies),
             _buildMenuItem(
-                icon: browseOutlineIcon,
-                iconSelected: browseIcon,
+                icon: CupertinoIcons.circle_grid_3x3,
+                iconSelected: CupertinoIcons.circle_grid_3x3_fill,
                 bottomMenu: BottomMenu.browse),
             _buildMenuItem(
-                icon: profileOutlineIcon,
-                iconSelected: profileIcon,
+                icon: CupertinoIcons.person_crop_circle,
+                iconSelected: CupertinoIcons.person_crop_circle_fill,
                 bottomMenu: BottomMenu.my),
             _buildMenuItem(
-                icon: moreOutlineIcon,
-                iconSelected: moreIcon,
+                icon: CupertinoIcons.ellipsis,
+                iconSelected: CupertinoIcons.ellipsis,
                 bottomMenu: BottomMenu.more),
           ],
           onTap: _onSelectMenuItem,
@@ -106,38 +107,35 @@ class _MainPageState extends State<MainPage> {
       case BottomMenu.more:
         return ComingSoonPage(menuIcon(_layoutSelection));
     }
-    return null;
   }
 
   BottomNavigationBarItem _buildMenuItem(
-      {IconData icon, IconData iconSelected, BottomMenu bottomMenu}) {
+      {required IconData icon,
+      required IconData iconSelected,
+      required BottomMenu bottomMenu}) {
     String text = menuItemName(bottomMenu);
     IconData setIcon = _setIconSelected(
         bottomMenu: bottomMenu, icon: icon, iconSelected: iconSelected);
     return BottomNavigationBarItem(
-      icon: Icon(
-        setIcon,
-        color: _setMenuItemColor(bottomMenu: bottomMenu),
-      ),
-      title: Text(
-        text,
-        style: TextStyle(
-          color: _setMenuItemColor(bottomMenu: bottomMenu),
+        icon: Icon(
+          setIcon,
         ),
-      ),
-    );
+        label: text);
   }
 
   IconData _setIconSelected(
-      {BottomMenu bottomMenu, IconData icon, IconData iconSelected}) {
+      {required BottomMenu bottomMenu,
+      required IconData icon,
+      required IconData iconSelected}) {
     return _layoutSelection == bottomMenu ? iconSelected : icon;
   }
 
-  Color _setMenuItemColor({BottomMenu bottomMenu}) {
+  Color _setMenuItemColor({required BottomMenu bottomMenu}) {
     return _layoutSelection == bottomMenu ? Colors.blueAccent : Colors.grey;
   }
 
   void _onSelectMenuItem(int index) {
+    tabIndex = index;
     switch (index) {
       case 0:
         _onLayoutSelected(BottomMenu.games);

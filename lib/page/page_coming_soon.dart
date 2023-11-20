@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class ComingSoonPage extends StatefulWidget {
-  ComingSoonPage(this.icon, {Key key}) : super(key: key);
+  ComingSoonPage(this.icon, {Key? key}) : super(key: key);
 
   final IconData icon;
 
@@ -21,7 +21,8 @@ class _ComingSoonPageState extends State<ComingSoonPage> {
           children: <Widget>[
             Icon(widget.icon, color: Colors.black26, size: 96),
             Padding(padding: EdgeInsets.only(bottom: 36)),
-            Text('Coming soon!', style: Theme.of(context).textTheme.subhead),
+            Text('Coming soon!',
+                style: Theme.of(context).textTheme.titleMedium),
             Padding(padding: EdgeInsets.only(bottom: 8)),
             Container(
               margin: EdgeInsets.symmetric(horizontal: 64),
@@ -30,7 +31,7 @@ class _ComingSoonPageState extends State<ComingSoonPage> {
                   textAlign: TextAlign.center,
                   style: Theme.of(context)
                       .textTheme
-                      .display1
+                      .headlineMedium!
                       .apply(color: Colors.black54)),
             ),
           ],

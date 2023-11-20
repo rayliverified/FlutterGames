@@ -1,18 +1,19 @@
 import 'package:flutter/material.dart';
 
 class ImageHeightItem extends StatelessWidget {
+  final BuildContext buildContext;
+  final String image;
+  final double height;
+  final double imageRatio;
+  final VoidCallback? onTap;
+  final double radius;
+  final double elevation;
+
   ImageHeightItem(this.buildContext, this.image, this.height,
       {this.imageRatio = 1.618,
       this.onTap,
       this.radius = 4,
       this.elevation = 8});
-  final BuildContext buildContext;
-  final String image;
-  final double height;
-  final double imageRatio;
-  final Function onTap;
-  final double radius;
-  final double elevation;
 
   @override
   Widget build(BuildContext context) {

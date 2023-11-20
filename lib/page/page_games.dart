@@ -3,7 +3,7 @@ import 'package:flutter_games/controller/scroll_horizontal_game.dart';
 import 'package:flutter_games/model/repository.dart';
 
 class GamesPage extends StatefulWidget {
-  GamesPage({Key key}) : super(key: key);
+  GamesPage({Key? key}) : super(key: key);
 
   @override
   _GamesPageState createState() => _GamesPageState();
@@ -23,7 +23,7 @@ class _GamesPageState extends State<GamesPage> {
                 children: [
                   Text(
                     "New Releases",
-                    style: Theme.of(context).textTheme.subhead,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                   InkWell(
                     onTap: () => {},
@@ -32,7 +32,7 @@ class _GamesPageState extends State<GamesPage> {
                           horizontal: 8, vertical: 4),
                       child: Text(
                         "Browse All",
-                        style: Theme.of(context).textTheme.display2,
+                        style: Theme.of(context).textTheme.displaySmall,
                       ),
                     ),
                   ),
@@ -47,7 +47,7 @@ class _GamesPageState extends State<GamesPage> {
                 children: [
                   Text(
                     "Most Popular",
-                    style: Theme.of(context).textTheme.subhead,
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                   InkWell(
                     onTap: () => {},
@@ -56,7 +56,7 @@ class _GamesPageState extends State<GamesPage> {
                           horizontal: 8, vertical: 4),
                       child: Text(
                         "Browse All",
-                        style: Theme.of(context).textTheme.display2,
+                        style: Theme.of(context).textTheme.displaySmall,
                       ),
                     ),
                   ),

@@ -1,16 +1,17 @@
 import 'package:flutter/material.dart';
 
 class ImageFixedWidth extends StatelessWidget {
-  ImageFixedWidth(this.image, this.width,
-      {this.imageRatio = 1.618, this.placeholder = ""});
   final String image;
   final double width;
   final double imageRatio;
   final String placeholder;
 
+  ImageFixedWidth(this.image, this.width,
+      {this.imageRatio = 1.618, this.placeholder = ""});
+
   @override
   Widget build(BuildContext context) {
-    double height = imageRatio == null ? width : imageRatio * width;
+    double height = imageRatio * width;
 
     return FadeInImage.assetNetwork(
       image: image,

@@ -1,5 +1,4 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_games/icons.dart';
+import 'package:flutter/cupertino.dart';
 
 enum BottomMenu {
   games,
@@ -29,16 +28,14 @@ String menuItemName(BottomMenu layoutType) {
 IconData menuIcon(BottomMenu layoutType) {
   switch (layoutType) {
     case BottomMenu.games:
-      return controllerIcon;
+      return CupertinoIcons.game_controller_solid;
     case BottomMenu.movies:
-      return movieIcon;
+      return CupertinoIcons.film;
     case BottomMenu.browse:
-      return browseIcon;
+      return CupertinoIcons.circle_grid_3x3_fill;
     case BottomMenu.my:
-      return profileIcon;
+      return CupertinoIcons.profile_circled;
     case BottomMenu.more:
-      return moreIcon;
-    default:
-      return null;
+      return CupertinoIcons.ellipsis;
   }
 }

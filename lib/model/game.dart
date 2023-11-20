@@ -1,16 +1,4 @@
-import 'package:meta/meta.dart';
-
 class Game {
-  Game({
-    @required this.name,
-    @required this.box,
-    this.cover,
-    this.description,
-    this.platforms,
-    this.rating,
-    this.screenshots,
-  });
-
   final String name;
   final String box;
   final String cover;
@@ -18,6 +6,16 @@ class Game {
   final List<String> platforms;
   final double rating;
   final List<String> screenshots;
+
+  Game({
+    required this.name,
+    required this.box,
+    this.cover = '',
+    this.description = '',
+    this.platforms = const [],
+    this.rating = 0,
+    this.screenshots = const [],
+  });
 
   String getPlatforms() {
     String platformText = "";
