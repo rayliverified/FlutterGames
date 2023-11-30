@@ -20,10 +20,10 @@ class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   @override
-  State<MyApp> createState() => _MyAppState();
+  State<MyApp> createState() => MyAppState();
 }
 
-class _MyAppState extends State<MyApp> {
+class MyAppState extends State<MyApp> {
   // @observable
   bool paidMember = false;
 
@@ -43,6 +43,10 @@ class _MyAppState extends State<MyApp> {
     super.initState();
     todos = List.generate(
         1000, (index) => Todo(title: 'Todo $index', completed: false));
+  }
+
+  void reorderList() {
+    todos.shuffle();
   }
 
   @override
@@ -123,8 +127,10 @@ class _SliderCheckboxListTileState extends State<SliderCheckboxListTile> {
     return CheckboxListTile(
       value: todo.completed,
       onChanged: (value) {
+        print('On changed');
         todo.completed = value ?? false;
-        setState(() {});
+        context.findAncestorStateOfType<MyAppState>()?.reorderList();
+        // setState(() {});
       },
       controlAffinity: ListTileControlAffinity.leading,
       title: Text(todo.title),
@@ -169,7 +175,13 @@ class _CheckboxListTileWrapperState extends State<CheckboxListTileWrapper> {
     return CheckboxListTile(
       value: widget.todo.completed,
       onChanged: (value) {
+        print('On Changed');
         widget.todo.completed = value ?? false;
+        MyAppState? myAppState = context.findAncestorStateOfType<MyAppState>();
+        if (myAppState != null) {
+          myAppState.reorderList();
+          myAppState.setState(() {});
+        }
         setState(() {});
       },
       controlAffinity: ListTileControlAffinity.leading,
