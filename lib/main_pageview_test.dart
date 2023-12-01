@@ -33,9 +33,7 @@ class MyAppState extends State<MyApp> {
           physics: AlwaysScrollableScrollPhysics(),
           controller: PageController(viewportFraction: 0.8),
           children: [
-            CounterPage(),
-            CounterPage(),
-            CounterPage(), // Add as many pages as you want
+            for (int i = 0; i < 10; i++) CounterPage(),
           ],
         ),
       ),
@@ -44,11 +42,14 @@ class MyAppState extends State<MyApp> {
 }
 
 class CounterPage extends StatefulWidget {
+  CounterPage({Key? key}) : super(key: key);
+
   @override
   _CounterPageState createState() => _CounterPageState();
 }
 
-class _CounterPageState extends State<CounterPage> {
+class _CounterPageState extends State<CounterPage>
+    with AutomaticKeepAliveClientMixin {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -91,4 +92,7 @@ class _CounterPageState extends State<CounterPage> {
       ),
     );
   }
+
+  @override
+  bool get wantKeepAlive => true;
 }
