@@ -42,10 +42,11 @@ class MyAppState extends State<MyApp> {
 }
 
 class CounterPage extends StatefulWidget {
-  CounterPage({Key? key}) : super(key: key);
+  // ignore: prefer_const_constructors_in_immutables
+  CounterPage({super.key});
 
   @override
-  _CounterPageState createState() => _CounterPageState();
+  State<CounterPage> createState() => _CounterPageState();
 }
 
 class _CounterPageState extends State<CounterPage>
@@ -60,6 +61,7 @@ class _CounterPageState extends State<CounterPage>
 
   @override
   Widget build(BuildContext context) {
+    super.build(context);
     return Scaffold(
       appBar: AppBar(
         title: Text('Counter Page'),
