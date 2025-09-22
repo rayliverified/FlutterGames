@@ -1,51 +1,54 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_games/models/game.dart';
-import 'package:flutter_games/ui/item_game_box.dart';
-import 'package:flutter_games/ui/item_header_diagonal.dart';
-import 'package:flutter_games/ui/item_image_height.dart';
+import 'package:flutter_games/model/game.dart';
+import "package:flutter_games/page/page_game_details.dart";
+import "package:flutter_games/ui/item_game_box.dart";
 
-class ItemGameContainer extends StatelessWidget {
-  const ItemGameContainer({
-    super.key,
-    required this.game,
-    required this.onTap,
-  });
-
+class GameContainerItem extends StatelessWidget {
+  GameContainerItem(this.buildContext, this.game);
+  final BuildContext buildContext;
   final Game game;
-  final Function(Game) onTap;
 
   @override
   Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: () => onTap(game),
-      child: Stack(
-        children: [
-          _buildDiagonalHeader(),
-          _buildGameBox(),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildGameBox() {
     return Padding(
-      padding: const EdgeInsets.only(left: 32),
-      child: GameBoxItem(
-        game: game,
-        height: 200,
-        width: 200,
-      ),
-    );
-  }
-
-  Widget _buildDiagonalHeader() {
-    return Padding(
-      padding: const EdgeInsets.only(top: 80, right: 32),
-      child: DiagonalHeader(
-        child: HeightImage(
-          game.coverUrl,
-          height: 180,
+      padding: const EdgeInsets.only(right: 12),
+      child: InkWell(
+        onTap: () => _goGameDetailsPage(context, game),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Hero(
+              tag: game.name,
+              child: GameBoxItem(context, game, width: 120),
+            ),
+            Padding(padding: const EdgeInsets.only(top: 6)),
+            ConstrainedBox(
+                constraints: const BoxConstraints(maxWidth: 120),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(game.name,
+                        style: Theme.of(context).textTheme.titleLarge,
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis),
+                    Text(game.getPlatforms(),
+                        style: Theme.of(context).textTheme.bodySmall,
+                        maxLines: 1,
+                        overflow: TextOverflow.fade),
+                  ],
+                ))
+          ],
         ),
+      ),
+    );
+  }
+
+  void _goGameDetailsPage(BuildContext context, Game game) {
+    Navigator.of(context).push(
+      MaterialPageRoute(
+        builder: (c) {
+          return GameDetailsPage(game);
+        },
       ),
     );
   }

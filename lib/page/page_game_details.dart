@@ -2,15 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:flutter_games/component/item_description.dart';
 import 'package:flutter_games/component/item_header_game.dart';
 import 'package:flutter_games/controller/scroll_horizontal_screenshots.dart';
-import 'package:flutter_games/models/game.dart';
+import 'package/flutter_games/model/game.dart';
 
 class GameDetailsPage extends StatefulWidget {
-  const GameDetailsPage(this.game, {super.key});
+  GameDetailsPage(this.game, {Key? key}) : super(key: key);
 
   final Game game;
 
   @override
-  _GameDetailsPageState createState() => _GameDetailsPageState();
+  _GameDetailsPageState createState() => _GameDeta_GameDetailsPageState();
 }
 
 class _GameDetailsPageState extends State<GameDetailsPage> {
@@ -34,8 +34,8 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        const Padding(
-                          padding: EdgeInsets.only(right: 8),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8),
                           child: Icon(
                             Icons.adjust,
                             color: Colors.white,
@@ -59,9 +59,8 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                       backgroundColor: MaterialStateProperty.all(Colors.green),
                       overlayColor: MaterialStateProperty.resolveWith<Color?>(
                         (Set<MaterialState> states) {
-                          if (states.contains(MaterialState.pressed)) {
+                          if (states.contains(MaterialState.pressed))
                             return Colors.green.shade400; // For splashColor
-                          }
                           return null; // Defer to the widget's default.
                         },
                       ),
@@ -82,8 +81,8 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
                       children: <Widget>[
-                        const Padding(
-                          padding: EdgeInsets.only(right: 8),
+                        Padding(
+                          padding: const EdgeInsets.only(right: 8),
                           child: Icon(
                             Icons.archive,
                             color: Colors.green,
@@ -105,17 +104,15 @@ class _GameDetailsPageState extends State<GameDetailsPage> {
                         borderRadius: BorderRadius.circular(4),
                       )),
                       side: MaterialStateProperty.all(
-                          const BorderSide(color: Colors.green, width: 4)),
+                          BorderSide(color: Colors.green, width: 4)),
                       backgroundColor: MaterialStateProperty.all(Colors.white),
                       overlayColor: MaterialStateProperty.resolveWith<Color?>(
                         (Set<MaterialState> states) {
-                          if (states.contains(MaterialState.pressed)) {
+                          if (states.contains(MaterialState.pressed))
                             return Colors.green.shade200; // For splashColor
-                          }
                           if (states.contains(MaterialState.hovered) ||
-                              states.contains(MaterialState.focused)) {
+                              states.contains(MaterialState.focused))
                             return Colors.white70; // For highlightColor
-                          }
                           return null; // Defer to the widget's default.
                         },
                       ),
