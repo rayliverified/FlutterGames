@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_games/component/item_description.dart';
 import 'package:flutter_games/component/item_header_game.dart';
 import 'package:flutter_games/controller/scroll_horizontal_screenshots.dart';
-import 'package/flutter_games/model/game.dart';
+import 'package:flutter_games/models/game.dart';
 
 class GameDetailsPage extends StatefulWidget {
   GameDetailsPage(this.game, {Key? key}) : super(key: key);
@@ -10,7 +10,7 @@ class GameDetailsPage extends StatefulWidget {
   final Game game;
 
   @override
-  _GameDetailsPageState createState() => _GameDeta_GameDetailsPageState();
+  _GameDetailsPageState createState() => _GameDetailsPageState();
 }
 
 class _GameDetailsPageState extends State<GameDetailsPage> {
