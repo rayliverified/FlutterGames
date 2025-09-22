@@ -28,7 +28,7 @@ class GameContainerItem extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(game.name,
-                        style: Theme.of(context).textTheme.headlineMedium,
+                        style: Theme.of(context).textTheme.headlineSmall,
                         maxLines: 1,
                         overflow: TextOverflow.ellipsis),
                     Text(game.getPlatforms(),
