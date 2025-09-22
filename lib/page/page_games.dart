@@ -23,10 +23,7 @@ class _GamesPageState extends State<GamesPage> {
                 children: [
                   Text(
                     "New Releases",
-                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w500,
-                        ),
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                   InkWell(
                     onTap: () => {},
@@ -50,10 +47,7 @@ class _GamesPageState extends State<GamesPage> {
                 children: [
                   Text(
                     "Most Popular",
-                    style: Theme.of(context).textTheme.titleMedium?.copyWith(
-                          fontSize: 18,
-                          fontWeight: FontWeight.w500,
-                        ),
+                    style: Theme.of(context).textTheme.titleMedium,
                   ),
                   InkWell(
                     onTap: () => {},
