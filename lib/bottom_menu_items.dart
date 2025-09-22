@@ -1,41 +1,46 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_games/page/page_coming_soon.dart';
+import 'package:flutter_games/page/page_games.dart';
+import 'package:flutter_games/page/page_movies.dart';
 
-enum BottomMenu {
-  games,
-  movies,
-  browse,
-  my,
-  more,
+List<BottomNavigationBarItem> get bottomMenuItems {
+  return [
+    BottomNavigationBarItem(
+      icon: Icon(Icons.gamepad),
+      label: 'Games',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.movie),
+      label: 'Movies',
+    ),
+    BottomNavigationBarItem(
+      icon: Icon(Icons.timelapse),
+      label: 'Coming Soon',
+    ),
+  ];
 }
 
-String menuItemName(BottomMenu layoutType) {
-  switch (layoutType) {
-    case BottomMenu.games:
-      return 'Games';
-    case BottomMenu.movies:
-      return 'Movies';
-    case BottomMenu.browse:
-      return 'Browse';
-    case BottomMenu.my:
-      return 'My Stuff';
-    case BottomMenu.more:
-      return 'More';
-    default:
-      return '';
-  }
+List<Widget> get bottomMenuPages {
+  return [
+    GamesPage(),
+    MoviesPage(),
+    ComingSoonPage(),
+  ];
 }
 
-IconData menuIcon(BottomMenu layoutType) {
-  switch (layoutType) {
-    case BottomMenu.games:
-      return CupertinoIcons.game_controller_solid;
-    case BottomMenu.movies:
-      return CupertinoIcons.film;
-    case BottomMenu.browse:
-      return CupertinoIcons.circle_grid_3x3_fill;
-    case BottomMenu.my:
-      return CupertinoIcons.profile_circled;
-    case BottomMenu.more:
-      return CupertinoIcons.ellipsis;
-  }
+List<Text> get bottomMenuTitles {
+  return [
+    Text(
+      'Games',
+      style: TextStyle(fontWeight: FontWeight.bold),
+    ),
+    Text(
+      'Movies',
+      style: TextStyle(fontWeight: FontWeight.bold),
+    ),
+    Text(
+      'Coming Soon',
+      style: TextStyle(fontWeight: FontWeight.bold),
+    ),
+  ];
 }
