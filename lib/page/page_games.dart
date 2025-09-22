@@ -32,7 +32,7 @@ class _GamesPageState extends State<GamesPage> {
                           horizontal: 8, vertical: 4),
                       child: Text(
                         "Browse All",
-                        style: Theme.of(context).textTheme.displaySmall,
+                        style: Theme.of(context).textTheme.titleMedium,
                       ),
                     ),
                   ),
@@ -56,7 +56,7 @@ class _GamesPageState extends State<GamesPage> {
                           horizontal: 8, vertical: 4),
                       child: Text(
                         "Browse All",
-                        style: Theme.of(context).textTheme.displaySmall,
+                        style: Theme.of(context).textTheme.titleMedium,
                       ),
                     ),
                   ),
