@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_games/pages/home.dart';
+import 'package:flutter_games/page/page_main.dart';
 import 'package:flutter_games/themes.dart';
 
 void main() {
@@ -15,7 +15,7 @@ class FlutterGames extends StatelessWidget {
       title: 'Flutter Games',
       theme: lightTheme,
       darkTheme: darkTheme,
-      home: const HomePage(),
+      home: MainPage(),
       debugShowCheckedModeBanner: false,
     );
   }
