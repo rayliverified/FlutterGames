@@ -1,6 +1,9 @@
 name: stream_games
 description: Flutter app for purchasing and renting games.
 
+environment:
+  sdk: '^3.10.0'
+
 dependencies:
   flutter:
     sdk: flutter
